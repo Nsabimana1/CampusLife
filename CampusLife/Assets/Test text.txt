@@ -1,0 +1,3 @@
+This is a sample text.
+*It should put these text into arrays.
+*Even this one.
