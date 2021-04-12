@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int[] comp = { 0, 0, 0, 0, 0, 0};
     public bool internship = false;
     public bool club = false;
     public int energy = 4;
+    private int[] comp = { 0, 0, 0, 0, 0, 0 };
     // Start is called before the first frame update
     void Start()
     {
@@ -21,14 +21,14 @@ public class Player : MonoBehaviour
     }
     public void increaseComp(int competency)
     {
-        comp[competency]++;
+        this.comp[competency]++;
     }
     public void resetEnergy() 
     {
-        energy = 4;
+        this.energy = 4;
     }
     public void useEnergy()
     {
-        energy--;
+        this.energy--;
     }
 }

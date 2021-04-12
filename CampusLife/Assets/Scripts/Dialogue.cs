@@ -9,14 +9,12 @@ public class Dialogue : MonoBehaviour
 
     private int i = 0;
 
-    private string text;
     private string[] Dialog;
 
     // Start is called before the first frame update
     void Start()
     {
-        text = allText.ToString();
-        Dialog = text.Split('*');
+        Dialog = allText.ToString().Split('*');
         Speak();
     }
 
@@ -37,6 +35,7 @@ public class Dialogue : MonoBehaviour
     //in the dialog array to the method StartDialog
     public void Speak()
     {
+        GameManager.Instance.StopDialog();
         GameManager.Instance.StartDialog(Dialog[i]);
         i++;
     }    

@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public GameObject dialogBox;
     public GameObject dialogText;
 
+    public Player player;
+
     private Coroutine dialogCo;
 
     private void Awake()
@@ -44,10 +46,19 @@ public class GameManager : MonoBehaviour
         dialogBox.SetActive(true);
         dialogCo = StartCoroutine(TypeText(text));
     }
+    public void StopDialog()
+    {
+        StopCoroutine(dialogCo);
+    }
     public void HideDialog()
     {
         dialogBox.SetActive(false);
         StopCoroutine(dialogCo);
+    }
+
+    public void increaseComp(int competency)
+    {
+        player.increaseComp(competency);
     }
 
     IEnumerator TypeText(string text)
