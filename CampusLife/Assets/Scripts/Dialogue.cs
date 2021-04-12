@@ -7,10 +7,6 @@ public class Dialogue : MonoBehaviour
 {
     public TextAsset allText;
 
-    public GameObject dialogBox;
-    public GameObject dialogText;
-
-    private Coroutine dialogCo;
     private int i = 0;
 
     private string text;
@@ -37,31 +33,11 @@ public class Dialogue : MonoBehaviour
         
     }
 
+    //Calls an instance of gamemanager and gives the i element
+    //in the dialog array to the method StartDialog
     public void Speak()
     {
-        StartDialog(Dialog[i]);
+        GameManager.Instance.StartDialog(Dialog[i]);
         i++;
-    }
-
-    //Method to start dialog
-    public void StartDialog(string text)
-    {
-        dialogBox.SetActive(true);
-        dialogCo = StartCoroutine(TypeText(text));
-    }
-    public void HideDialog()
-    {
-        dialogBox.SetActive(false);
-        StopCoroutine(dialogCo);
-    }
-
-    IEnumerator TypeText(string text)
-    {
-        dialogText.GetComponent<TextMeshProUGUI>().text = "";
-        foreach (char c in text.ToCharArray())
-        {
-            dialogText.GetComponent<TextMeshProUGUI>().text += c;
-            yield return new WaitForSeconds(0.1f);
-        }
-    }
+    }    
 }
