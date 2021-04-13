@@ -53,7 +53,6 @@ public class Choice : MonoBehaviour
     //in the dialog array to the method StartDialog
     public void Speak(string[] Dialog)
     {
-        GameManager.Instance.StopDialog();
         GameManager.Instance.StartDialog(Dialog[i]);
         i++;
     }

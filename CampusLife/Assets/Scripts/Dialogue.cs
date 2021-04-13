@@ -35,7 +35,6 @@ public class Dialogue : MonoBehaviour
     //in the dialog array to the method StartDialog
     public void Speak()
     {
-        GameManager.Instance.StopDialog();
         GameManager.Instance.StartDialog(Dialog[i]);
         i++;
     }    

@@ -43,6 +43,10 @@ public class GameManager : MonoBehaviour
     }
     public void StartDialog(string text)
     {
+        if (dialogCo != null)
+        {
+            HideDialog();
+        }
         dialogBox.SetActive(true);
         dialogCo = StartCoroutine(TypeText(text));
     }
