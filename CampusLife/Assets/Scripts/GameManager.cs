@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public GameObject dialogBox;
     public GameObject dialogText;
 
+    public GameObject Choice1;
+    public GameObject Choice2;
+
     public Player player;
 
     private Coroutine dialogCo;
@@ -24,6 +27,9 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             DontDestroyOnLoad(events);
             DontDestroyOnLoad(canvas);
+            DontDestroyOnLoad(player);
+            DontDestroyOnLoad(Choice1);
+            DontDestroyOnLoad(Choice2);
         }
         else
         {
@@ -58,6 +64,17 @@ public class GameManager : MonoBehaviour
     {
         dialogBox.SetActive(false);
         StopCoroutine(dialogCo);
+    }
+
+    public void enableChoice()
+    {
+        Choice1.SetActive(true);
+        Choice2.SetActive(true);
+    }
+    public void disableChoice()
+    {
+        Choice1.SetActive(false);
+        Choice2.SetActive(false);
     }
 
     public void increaseComp(int competency)
