@@ -23,6 +23,7 @@ public class Dialogue : MonoBehaviour
     private string[] Dialog;
     private string[] choice1;
     private string[] choice2;
+    private string[] curDialog;
     
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class Dialogue : MonoBehaviour
         choices = choiceText.ToString().Split('|');
         choice1 = choices[0].Split('*');
         choice2 = choices[1].Split('*');
+        curDialog = Dialog;
         Speak();
     }
 
@@ -40,18 +42,17 @@ public class Dialogue : MonoBehaviour
     // part of the dialogue.
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) || choiceMade)
+        if (Input.GetMouseButtonDown(0) && choiceMade)
         {
             Speak();
         }
-        
     }
 
     //Calls an instance of gamemanager and gives the i element
     //in the dialog array to the method StartDialog
     public void Speak()
     {
-        GameManager.Instance.StartDialog(Dialog[i]);
+        GameManager.Instance.StartDialog(curDialog[i]);
         i++;
         if (i == Dialog.Length)
         {
@@ -64,7 +65,7 @@ public class Dialogue : MonoBehaviour
     {
         choiceMade = true;
         GameManager.Instance.increaseComp(effect1);
-        Dialog = choice1;
+        curDialog = choice1;
         i = 0;
         Speak();
     }
@@ -72,7 +73,7 @@ public class Dialogue : MonoBehaviour
     {
         choiceMade = true;
         GameManager.Instance.increaseComp(effect2);
-        Dialog = choice2;
+        curDialog = choice2;
         i = 0;
         Speak();
     }
