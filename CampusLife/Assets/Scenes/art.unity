@@ -434,10 +434,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d91198e06c6b0a7408d028d1226be006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allText: {fileID: 4900000, guid: 7b4779d51abccc944a1aec65c75fad60, type: 3}
-  choiceText: {fileID: 4900000, guid: 29174b33080d46141a11fbea4fc87ee5, type: 3}
-  effect1: 0
-  effect2: 1
+  allText: {fileID: 4900000, guid: a389773d84c84d74799669d3f83e8140, type: 3}
+  choiceText: {fileID: 4900000, guid: 090834e020be8ea46827bacc2d36b9fd, type: 3}
+  effect1: 3
+  effect2: 5
 --- !u!4 &722651578
 Transform:
   m_ObjectHideFlags: 0

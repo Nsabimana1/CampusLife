@@ -434,8 +434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d91198e06c6b0a7408d028d1226be006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allText: {fileID: 4900000, guid: 7b4779d51abccc944a1aec65c75fad60, type: 3}
-  choiceText: {fileID: 4900000, guid: 29174b33080d46141a11fbea4fc87ee5, type: 3}
+  allText: {fileID: 4900000, guid: fa75c6883cdd8134d92c1eccf2e69a5a, type: 3}
+  choiceText: {fileID: 4900000, guid: edfb9ca9de7ac9543aa96c78bf87a0f5, type: 3}
   effect1: 0
   effect2: 1
 --- !u!4 &722651578
