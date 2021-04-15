@@ -5,13 +5,46 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/StartingScene.unity
     guid: f0e429fb75a4f4d45a16b6eead2e0704
   - enabled: 1
     path: Assets/Scenes/sltc.unity
     guid: 7a39a290bc43aa44e8e16f7fbfd76d3a
+  - enabled: 1
+    path: Assets/Scenes/art.unity
+    guid: 706940c5e60326641afba5489e3bd502
+  - enabled: 1
+    path: Assets/Scenes/bailey.unity
+    guid: 8cee25e72402dbc4483b1da806389947
+  - enabled: 1
+    path: Assets/Scenes/caf.unity
+    guid: 3586a398a9ed3a14eac61667e43b7a04
+  - enabled: 1
+    path: Assets/Scenes/csoffice.unity
+    guid: 6f7693e495f51144184c8b51421e9c68
+  - enabled: 1
+    path: Assets/Scenes/dwr.unity
+    guid: 504f80624c5c95b428ae65fa622d488b
+  - enabled: 1
+    path: Assets/Scenes/ellis.unity
+    guid: 81afcad98d72a8b44beabda096c58b97
+  - enabled: 1
+    path: Assets/Scenes/fausett.unity
+    guid: 2dd5d657d0118ba438da5f1ef1c7b538
+  - enabled: 1
+    path: Assets/Scenes/martin.unity
+    guid: 15a11df9b8b5bd8469d9d0360e53f603
+  - enabled: 1
+    path: Assets/Scenes/mcr.unity
+    guid: f19bbe7e72cfffe44b856b39eac84a3f
+  - enabled: 1
+    path: Assets/Scenes/mills.unity
+    guid: 9b08d6eae4219cb40a509994ed16a73c
+  - enabled: 1
+    path: Assets/Scenes/trieschmann.unity
+    guid: 4da8110ea51043147bdb8c27c8977861
+  - enabled: 1
+    path: Assets/Scenes/wac.unity
+    guid: b324bf2b6bd022f419a3f772da65424f
   m_configObjects: {}
