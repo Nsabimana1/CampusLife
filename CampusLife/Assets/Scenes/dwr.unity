@@ -352,8 +352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d91198e06c6b0a7408d028d1226be006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allText: {fileID: 4900000, guid: 7b4779d51abccc944a1aec65c75fad60, type: 3}
-  choiceText: {fileID: 4900000, guid: 29174b33080d46141a11fbea4fc87ee5, type: 3}
+  allText: {fileID: 4900000, guid: 0554fd5f0b6f13b4eb74f4f375385b53, type: 3}
+  choiceText: {fileID: 4900000, guid: ed449119c881f2d4088a7b87ca8080e8, type: 3}
   effect1: 0
   effect2: 1
 --- !u!4 &722651578
@@ -1038,7 +1038,7 @@ Transform:
   m_GameObject: {fileID: 1649513810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.66, y: 1.66, z: 1}
+  m_LocalScale: {x: 1.666, y: 1.666, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
