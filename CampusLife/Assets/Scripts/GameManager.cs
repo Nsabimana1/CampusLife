@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Persistent elements")]
     public GameObject events;
     public GameObject canvas;
     public static GameManager Instance { get; private set; }
@@ -14,13 +15,16 @@ public class GameManager : MonoBehaviour
     public GameObject dialogText;
 
     public GameObject Choice1;
-    public GameObject Choice2;
-
+    public GameObject Choice2;
+
     public GameObject startButton;
     public GameObject titleText;
 
+    [Header("Persistent Player")]
     public Player player;
 
+    [Header("Text Stuff")]
+    public float speed = 0.1f;
     public GameObject music;
 
     private Coroutine dialogCo;
@@ -95,22 +99,22 @@ public class GameManager : MonoBehaviour
         foreach (char c in text.ToCharArray())
         {
             dialogText.GetComponent<TextMeshProUGUI>().text += c;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(speed);
         }
-    }
-
-    public void startButtonPressed()
-    {
-        startButton.SetActive(false);
-        titleText.SetActive(false);
-        changeScene("sltc");
-    }
-
-    public void changeScene(string toTravel)
-    {
-        StartCoroutine(LoadYourAsyncScene(toTravel));
-    }
-
+    }
+
+    public void startButtonPressed()
+    {
+        startButton.SetActive(false);
+        titleText.SetActive(false);
+        changeScene("sltc");
+    }
+
+    public void changeScene(string toTravel)
+    {
+        StartCoroutine(LoadYourAsyncScene(toTravel));
+    }
+
     IEnumerator LoadYourAsyncScene(string scene)
     {
         // The Application loads the Scene in the background as the current Scene runs.
