@@ -14,6 +14,7 @@ public class Dialogue : MonoBehaviour
     [Range(0, 5)]
     public int effect2;
 
+    private string temp;
     private int i = 0;
     private bool choiceMade = true;
 
@@ -24,15 +25,21 @@ public class Dialogue : MonoBehaviour
     private string[] choice1;
     private string[] choice2;
     private string[] curDialog;
-    
+
     // Start is called before the first frame update
     void Start()
     {
         Dialog = allText.ToString().Split('*');
-        choices = choiceText.ToString().Split('|');
-        choice1 = choices[0].Split('*');
-        choice2 = choices[1].Split('*');
+        temp = choiceText.ToString();
+        if (temp != "") 
+        { 
+            choices = temp.Split('|');
+            choice1 = choices[0].Split('*');
+            choice2 = choices[1].Split('*');
+        }
         curDialog = Dialog;
+        Debug.Log(i);
+        Debug.Log(curDialog[i]);
         Speak();
     }
 
