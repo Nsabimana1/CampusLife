@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
     public GameObject Choice1;
     public GameObject Choice2;
 
+    public GameObject startButton;
+    public GameObject titleText;
+
     public Player player;
 
     private Coroutine dialogCo;
@@ -91,6 +94,13 @@ public class GameManager : MonoBehaviour
             dialogText.GetComponent<TextMeshProUGUI>().text += c;
             yield return new WaitForSeconds(0.1f);
         }
+    }
+
+    public void startButtonPressed()
+    {
+        startButton.SetActive(false);
+        titleText.SetActive(false);
+        changeScene("sltc");
     }
 
     public void changeScene(string toTravel)
