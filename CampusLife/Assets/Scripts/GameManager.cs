@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
 
     [Header("Text Stuff")]
     public float speed = 0.1f;
+
+    [Header("Music stuff")]
     public GameObject music;
 
     private Coroutine dialogCo;
