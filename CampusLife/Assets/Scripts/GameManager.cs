@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
 
     public Player player;
 
+    public GameObject music;
+
     private Coroutine dialogCo;
 
     private void Awake()
@@ -28,12 +30,13 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
-            DontDestroyOnLoad(events);
-            DontDestroyOnLoad(canvas);
-            DontDestroyOnLoad(player);
-            DontDestroyOnLoad(Choice1);
-            DontDestroyOnLoad(Choice2);
+            //DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(events);
+            //DontDestroyOnLoad(canvas);
+            //DontDestroyOnLoad(player);
+            //DontDestroyOnLoad(Choice1);
+            //DontDestroyOnLoad(Choice2);
+            DontDestroyOnLoad(music);
         }
         else
         {
