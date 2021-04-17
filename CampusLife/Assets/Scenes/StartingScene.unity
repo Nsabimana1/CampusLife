@@ -931,7 +931,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1203213289
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1259,6 +1259,7 @@ MonoBehaviour:
   Choice2: {fileID: 0}
   startButton: {fileID: 1135133050}
   titleText: {fileID: 931296228}
+  energy: 4
   speed: 0.1
   music: {fileID: 280419331}
 --- !u!4 &1880512451
