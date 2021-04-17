@@ -11,24 +11,28 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void increaseComp(int competency)
     {
         this.comp[competency]++;
     }
-    public void resetEnergy() 
+    public void resetEnergy(int ener)
     {
-        this.energy = 4;
+        this.energy = ener;
     }
     public void useEnergy()
     {
         this.energy--;
+    }
+    public int[] giveComp()
+    {
+        return comp;
     }
 }

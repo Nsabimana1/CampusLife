@@ -20,8 +20,10 @@ public class GameManager : MonoBehaviour
     public GameObject startButton;
     public GameObject titleText;
 
-    [Header("Persistent Player")]
-    public Player player;
+    private Player player;
+
+    [Header("Scene Transition Stuff")]
+    public int energy = 4;
 
     [Header("Text Stuff")]
     public float speed = 0.1f;
@@ -29,20 +31,25 @@ public class GameManager : MonoBehaviour
     [Header("Music stuff")]
     public GameObject music;
 
+    private TextMeshProUGUI DialogText;
     private Coroutine dialogCo;
+    private bool textTyped;
+    private bool textBeTyping;
 
     private void Awake()
     {
+        player = new Player();
         if (Instance == null)
         {
             Instance = this;
             //DontDestroyOnLoad(gameObject);
             //DontDestroyOnLoad(events);
             //DontDestroyOnLoad(canvas);
-            //DontDestroyOnLoad(player);
+            DontDestroyOnLoad(player);
             //DontDestroyOnLoad(Choice1);
             //DontDestroyOnLoad(Choice2);
             DontDestroyOnLoad(music);
+            DialogText = dialogText.GetComponent<TextMeshProUGUI>();
         }
         else
         {
@@ -66,8 +73,23 @@ public class GameManager : MonoBehaviour
         {
             HideDialog();
         }
-        dialogBox.SetActive(true);
-        dialogCo = StartCoroutine(TypeText(text));
+        
+        if(!textTyped && textBeTyping)
+        {
+            //print out entire dialog to dialog box and stop dialog typing
+            StopDialog();
+            SetDialog(text);
+        }
+        else if(textTyped && textBeTyping)
+        {
+            //methods for updating current dialog
+        }
+        else if (!textTyped && !textBeTyping)
+        {
+            dialogBox.SetActive(true);
+            dialogCo = StartCoroutine(TypeText(text));
+            textBeTyping = true;
+        }
     }
     public void StopDialog()
     {
@@ -77,6 +99,12 @@ public class GameManager : MonoBehaviour
     {
         dialogBox.SetActive(false);
         StopCoroutine(dialogCo);
+        textTyped = false;
+    }
+
+    public void SetDialog(string text)
+    {
+        DialogText.text = text;
     }
 
     public void enableChoice()
@@ -97,11 +125,15 @@ public class GameManager : MonoBehaviour
 
     IEnumerator TypeText(string text)
     {
-        dialogText.GetComponent<TextMeshProUGUI>().text = "";
+        DialogText.text = "";
         foreach (char c in text.ToCharArray())
         {
-            dialogText.GetComponent<TextMeshProUGUI>().text += c;
+            DialogText.text += c;
             yield return new WaitForSeconds(speed);
+        }
+        if(DialogText.text == text)
+        {
+            textTyped = true;
         }
     }
 
@@ -115,9 +147,13 @@ public class GameManager : MonoBehaviour
     public void changeScene(string toTravel)
     {
         StartCoroutine(LoadYourAsyncScene(toTravel));
-    }
-
-    IEnumerator LoadYourAsyncScene(string scene)
+    }    public Player getPlayer()
+    {
+        return player;
+    }
+
+
+IEnumerator LoadYourAsyncScene(string scene)
     {
         // The Application loads the Scene in the background as the current Scene runs.
         // This is particularly good for creating loading screens.
@@ -134,4 +170,8 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public int[] getComp()
+    {
+        throw new System.NotImplementedException();
+    }
 }
