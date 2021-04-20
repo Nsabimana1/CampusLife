@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,10 +14,11 @@ public class GameManager : MonoBehaviour
 
     public GameObject dialogBox;
     public GameObject dialogText;
+    public GameObject nameText;
 
     public GameObject Choice1;
     public GameObject Choice2;
-
+    public Image background;    public Image character;    public Image logo;
     public GameObject startButton;
     public GameObject titleText;
 
@@ -42,12 +44,12 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            //DontDestroyOnLoad(gameObject);
-            //DontDestroyOnLoad(events);
-            //DontDestroyOnLoad(canvas);
+            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(events);
+            DontDestroyOnLoad(canvas);
             DontDestroyOnLoad(player);
-            //DontDestroyOnLoad(Choice1);
-            //DontDestroyOnLoad(Choice2);
+            DontDestroyOnLoad(Choice1);
+            DontDestroyOnLoad(Choice2);
             DontDestroyOnLoad(music);
             DialogText = dialogText.GetComponent<TextMeshProUGUI>();
         }
@@ -136,14 +138,15 @@ public class GameManager : MonoBehaviour
             textTyped = true;
         }
     }
-
     public void startButtonPressed()
     {
         startButton.SetActive(false);
-        titleText.SetActive(false);
-        changeScene("sltc");
+        titleText.SetActive(false);        logo.enabled = false;        character.enabled = true;
+        changeBackground("sltc");
+    }    public void changeBackground(string text)
+    {
+        background.sprite = Resources.Load("Assets/Sprites/Backgrounds/" + text + "8.png") as Sprite;
     }
-
     public void changeScene(string toTravel)
     {
         StartCoroutine(LoadYourAsyncScene(toTravel));
