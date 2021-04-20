@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public GameObject dialogText;
     public GameObject nameText;
 
+    public GameObject Resume;
+
     public GameObject Choice1;
     public GameObject Choice2;
     public Image background;    public GameObject character;    public Image logo;
@@ -23,6 +25,7 @@ public class GameManager : MonoBehaviour
     public GameObject titleText;
 
     private Player player;
+    private Resume resume;
 
     [Header("Scene Transition Stuff")]
     public int energy = 4;
@@ -41,6 +44,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         player = new Player();
+        resume = new Resume();
         if (Instance == null)
         {
             Instance = this;
@@ -48,9 +52,11 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(events);
             DontDestroyOnLoad(canvas);
             DontDestroyOnLoad(player);
+            DontDestroyOnLoad(resume);
             DontDestroyOnLoad(Choice1);
             DontDestroyOnLoad(Choice2);
             DontDestroyOnLoad(music);
+            DontDestroyOnLoad(Resume);
             DialogText = dialogText.GetComponent<TextMeshProUGUI>();
         }
         else
@@ -68,6 +74,12 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void showResume()
+    {
+        Resume.SetActive(true);
+        //methods for showing the sresume in the UI.
     }
     public void StartDialog(string text)
     {
@@ -173,8 +185,8 @@ IEnumerator LoadYourAsyncScene(string scene)
 
     }
 
-    public int[] getComp()
-    {
-        throw new System.NotImplementedException();
-    }
+    //public int[] getComp()
+    //{
+        //throw new System.NotImplementedException();
+    //}
 }

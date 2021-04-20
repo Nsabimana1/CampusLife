@@ -35,4 +35,20 @@ public class Player : MonoBehaviour
     {
         return comp;
     }
+    public void joinsClub()
+    {
+        club = true;
+    }
+    public void hasInternship()
+    {
+        internship = true;
+    }
+    public bool getClub()
+    {
+        return club;
+    }
+    public bool getInternship()
+    {
+        return internship;
+    }
 }

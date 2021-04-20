@@ -2067,6 +2067,7 @@ MonoBehaviour:
   dialogBox: {fileID: 354140707}
   dialogText: {fileID: 1694642065}
   nameText: {fileID: 1827452380}
+  Resume: {fileID: 1203213288}
   Choice1: {fileID: 994927614}
   Choice2: {fileID: 899534878}
   background: {fileID: 1445677089}
