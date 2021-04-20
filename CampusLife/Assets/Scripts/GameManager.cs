@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject Choice1;
     public GameObject Choice2;
-    public Image background;    public Image character;    public Image logo;
+    public Image background;    public GameObject character;    public Image logo;
     public GameObject startButton;
     public GameObject titleText;
 
@@ -140,8 +140,8 @@ public class GameManager : MonoBehaviour
     }
     public void startButtonPressed()
     {
-        startButton.SetActive(false);
-        titleText.SetActive(false);        logo.enabled = false;        character.enabled = true;
+        startButton.SetActive(false);
+        titleText.SetActive(false);        logo.enabled = false;        dialogBox.SetActive(true);        dialogText.SetActive(true);        nameText.SetActive(true);        character.SetActive(true);
         changeBackground("sltc");
     }    public void changeBackground(string text)
     {
