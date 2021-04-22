@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject canvas;
     public static GameManager Instance { get; private set; }
 
+    [Header("UI Elements")]
     public GameObject dialogBox;
     public GameObject dialogText;
     public GameObject nameText;
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour
     public GameObject Choice1;
     public GameObject Choice2;
 
+    [Header("Backgrounds")]
     public GameObject menubackground;
     public GameObject sltc;
     public GameObject art;
@@ -36,6 +38,7 @@ public class GameManager : MonoBehaviour
     public GameObject trieschmann;
     public GameObject wac;
 
+    [Header("Images")]
     public GameObject tourguide;
     public Image logo;
 
@@ -56,7 +59,9 @@ public class GameManager : MonoBehaviour
 
     private TextMeshProUGUI DialogText;
     private TextMeshProUGUI ResumeText;
+
     private Coroutine dialogCo;
+
     private bool textTyped;
     private bool textBeTyping;
 
@@ -86,17 +91,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void showResume()
     {
@@ -104,8 +98,12 @@ public class GameManager : MonoBehaviour
         //methods for showing the resume in the UI.
         ResumeText.text = resume.getResume();
     }
-    public void StartDialog(string text)
+    public void StartDialog(string[] text)
     {
+        if(index >= text.Length)
+        {
+            index = 0;
+        }
         if (dialogCo != null)
         {
             HideDialog();
@@ -115,20 +113,23 @@ public class GameManager : MonoBehaviour
         {
             //print out entire dialog to dialog box and stop dialog typing
             StopDialog();
-            SetDialog(text);
+            SetDialog(text[index]);
         }
         else if(textTyped && textBeTyping)
         {
-            //methods for updating current dialog
             //clear text
+            DialogText.text = " ";
             //get new text
+            index++;
             //start typing
+            dialogCo = StartCoroutine(TypeText(text[index]));
             //reset bools properly
+            textTyped = false;
         }
         else if (!textTyped && !textBeTyping)
         {
             dialogBox.SetActive(true);
-            dialogCo = StartCoroutine(TypeText(text));
+            dialogCo = StartCoroutine(TypeText(text[index]));
             textBeTyping = true;
         }
     }

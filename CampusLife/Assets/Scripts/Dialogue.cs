@@ -57,10 +57,16 @@ public class Dialogue : MonoBehaviour
 
     //Calls an instance of gamemanager and gives the i element
     //in the dialog array to the method StartDialog
-    public void Speak()
+    public void Speak(bool newDialog = false)
     {
-        GameManager.Instance.StartDialog(curDialog[i]);
-        i++;
+        if (!newDialog)
+        {
+            GameManager.Instance.StartDialog(Dialog[i]);
+        }
+        else
+        {
+            GameManager.Instance.StartDialog(getDialog());
+        }
         if (i == Dialog.Length)
         {
             choiceMade = false;
