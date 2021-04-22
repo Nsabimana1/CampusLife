@@ -55,9 +55,12 @@ public class GameManager : MonoBehaviour
     public GameObject music;
 
     private TextMeshProUGUI DialogText;
+    private TextMeshProUGUI ResumeText;
     private Coroutine dialogCo;
     private bool textTyped;
     private bool textBeTyping;
+
+    private int index = 0;
 
     private void Awake()
     {
@@ -76,6 +79,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(music);
             DontDestroyOnLoad(Resume);
             DialogText = dialogText.GetComponent<TextMeshProUGUI>();
+            ResumeText = Resume.GetComponentInChildren<TextMeshProUGUI>();
         }
         else
         {
@@ -97,7 +101,8 @@ public class GameManager : MonoBehaviour
     public void showResume()
     {
         Resume.SetActive(true);
-        //methods for showing the sresume in the UI.
+        //methods for showing the resume in the UI.
+        ResumeText.text = resume.getResume();
     }
     public void StartDialog(string text)
     {
@@ -105,7 +110,7 @@ public class GameManager : MonoBehaviour
         {
             HideDialog();
         }
-        
+        //text will stop and just print out the dialog in this case
         if(!textTyped && textBeTyping)
         {
             //print out entire dialog to dialog box and stop dialog typing
@@ -115,6 +120,10 @@ public class GameManager : MonoBehaviour
         else if(textTyped && textBeTyping)
         {
             //methods for updating current dialog
+            //clear text
+            //get new text
+            //start typing
+            //reset bools properly
         }
         else if (!textTyped && !textBeTyping)
         {
