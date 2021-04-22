@@ -68,6 +68,19 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+    private string getDialog()
+    {
+        string dialog = Dialog[i];
+        i++; 
+        if (i == Dialog.Length)
+        {
+            choiceMade = false;
+            GameManager.Instance.enableChoice();
+        }
+        return dialog;
+
+    }
+
     public void Choice1()
     {
         choiceMade = true;
