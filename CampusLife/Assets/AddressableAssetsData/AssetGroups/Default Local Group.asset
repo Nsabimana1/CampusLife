@@ -16,7 +16,91 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 5ea8864785dbd474084d7d8478471430
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 7b648095f9760294db7b4c541af43704
+    m_Address: Assets/Sprites/Backgrounds/art8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5ceee651caf792f49becef27a949a830
+    m_Address: Assets/Sprites/Backgrounds/bailey8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 64710f98be13fa3419ad81a69d1036ec
+    m_Address: Assets/Sprites/Backgrounds/caf8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: aaccefe6517147c42be83759a25741d5
+    m_Address: Assets/Sprites/Backgrounds/csoffice8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 16ffa39402bb61d49b00d1cb143727fb
+    m_Address: Assets/Sprites/Backgrounds/dwr8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 376796c0ef8e21549aa322462f8c4254
+    m_Address: Assets/Sprites/Backgrounds/ellis8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a3ea4651b82650e4d8675e78792a6554
+    m_Address: Assets/Sprites/Backgrounds/fausett8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 77d330a87a176744cbb133423e4bb17c
+    m_Address: Assets/Sprites/Backgrounds/martin8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e9172571a065d644b9bfcb12eebdf7ca
+    m_Address: Assets/Sprites/Backgrounds/mcr8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d5e3032228caad6479edb362b51488f8
+    m_Address: Assets/Sprites/Backgrounds/mills8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3268659cba8d5b849878ce9e18600776
+    m_Address: Assets/Sprites/Backgrounds/sltc8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 04bf4a65a8cbce042910fb6b70851bad
+    m_Address: Assets/Sprites/Backgrounds/trieschmann8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 86127a964387c5e4dab00ddca8cff175
+    m_Address: Assets/Sprites/Backgrounds/wac8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 23ca014f1f634bc478394a0e87504379
+    m_Address: Assets/Sprites/Characters/IvanThePixel.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 79c2d74175c3e7e458b07a0986c055b7, type: 2}
   m_SchemaSet:

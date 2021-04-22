@@ -21,8 +21,22 @@ public class GameManager : MonoBehaviour
     public GameObject Choice1;
     public GameObject Choice2;
 
-    public Image background;
-    public GameObject character;
+    public GameObject menubackground;
+    public GameObject sltc;
+    public GameObject art;
+    public GameObject bailey;
+    public GameObject caf;
+    public GameObject csoffice;
+    public GameObject dwr;
+    public GameObject ellis;
+    public GameObject fausett;
+    public GameObject martin;
+    public GameObject mcr;
+    public GameObject mills;
+    public GameObject trieschmann;
+    public GameObject wac;
+
+    public GameObject tourguide;
     public Image logo;
 
     public GameObject startButton;
@@ -71,7 +85,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -136,16 +150,6 @@ public class GameManager : MonoBehaviour
         Choice2.SetActive(false);
     }
 
-    public void enableChar()
-    {
-        //character.setActive(true);
-    }
-
-    public void disableChar()
-    {
-        //character.setActive(false);
-    }
-
     public void increaseComp(int competency)
     {
         player.increaseComp(competency);
@@ -175,22 +179,17 @@ public class GameManager : MonoBehaviour
         dialogBox.SetActive(true);
         dialogText.SetActive(true);
         nameText.SetActive(true);
-        character.SetActive(true);
-        changeBackground("sltc");
+        tourguide.SetActive(true);
+        changeElement(menubackground, sltc);
     }
 
-    public void changeBackground(string text)
+    public void changeElement(GameObject current, GameObject next)
     {
-        background.sprite = Resources.Load("Assets/Sprites/Backgrounds/" + text + "8.png") as Sprite;
-    }
-
-    public void changeCharacter(string text)
-    {
-        //character.sprite = Resources.Load("Assets/Sprites/Characters/" + text) as Sprite;
+        current.SetActive(false);
+        next.SetActive(true);
     }
 
     public void changeScene(string toTravel)
-
     {
         StartCoroutine(LoadYourAsyncScene(toTravel));
     }
