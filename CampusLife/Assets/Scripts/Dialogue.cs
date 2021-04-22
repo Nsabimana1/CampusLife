@@ -38,8 +38,6 @@ public class Dialogue : MonoBehaviour
             choice2 = choices[1].Split('*');
         }
         curDialog = Dialog;
-        Debug.Log(i);
-        Debug.Log(curDialog[i]);
         Speak();
     }
 
@@ -57,34 +55,15 @@ public class Dialogue : MonoBehaviour
 
     //Calls an instance of gamemanager and gives the i element
     //in the dialog array to the method StartDialog
-    public void Speak(bool newDialog = false)
+    public void Speak()
     {
-        if (!newDialog)
-        {
-            GameManager.Instance.StartDialog(Dialog[i]);
-        }
-        else
-        {
-            GameManager.Instance.StartDialog(getDialog());
-        }
+        GameManager.Instance.StartDialog(curDialog);
+        i++;
         if (i == Dialog.Length)
         {
             choiceMade = false;
             GameManager.Instance.enableChoice();
         }
-    }
-
-    private string getDialog()
-    {
-        string dialog = Dialog[i];
-        i++; 
-        if (i == Dialog.Length)
-        {
-            choiceMade = false;
-            GameManager.Instance.enableChoice();
-        }
-        return dialog;
-
     }
 
     public void Choice1()
