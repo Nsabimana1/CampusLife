@@ -43,8 +43,8 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        player = new Player();
-        resume = new Resume();
+        player = gameObject.AddComponent(typeof(Player)) as Player;
+        resume = gameObject.AddComponent(typeof(Resume)) as Resume;
         if (Instance == null)
         {
             Instance = this;
