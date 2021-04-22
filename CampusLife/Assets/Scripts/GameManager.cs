@@ -19,8 +19,12 @@ public class GameManager : MonoBehaviour
     public GameObject Resume;
 
     public GameObject Choice1;
-    public GameObject Choice2;
-    public Image background;    public GameObject character;    public Image logo;
+    public GameObject Choice2;
+
+    public Image background;
+    public GameObject character;
+    public Image logo;
+
     public GameObject startButton;
     public GameObject titleText;
 
@@ -132,6 +136,16 @@ public class GameManager : MonoBehaviour
         Choice2.SetActive(false);
     }
 
+    public void enableChar()
+    {
+        //character.setActive(true);
+    }
+
+    public void disableChar()
+    {
+        //character.setActive(false);
+    }
+
     public void increaseComp(int competency)
     {
         player.increaseComp(competency);
@@ -149,20 +163,39 @@ public class GameManager : MonoBehaviour
         {
             textTyped = true;
         }
-    }
-    public void startButtonPressed()
-    {
+    }
+
+    public void startButtonPressed()
+
+    {
         startButton.SetActive(false);
-        titleText.SetActive(false);        logo.enabled = false;        dialogBox.SetActive(true);        dialogText.SetActive(true);        nameText.SetActive(true);        character.SetActive(true);
-        changeBackground("sltc");
-    }    public void changeBackground(string text)
+        titleText.SetActive(false);
+        logo.enabled = false;
+
+        dialogBox.SetActive(true);
+        dialogText.SetActive(true);
+        nameText.SetActive(true);
+        character.SetActive(true);
+        changeBackground("sltc");
+    }
+
+    public void changeBackground(string text)
     {
         background.sprite = Resources.Load("Assets/Sprites/Backgrounds/" + text + "8.png") as Sprite;
-    }
-    public void changeScene(string toTravel)
-    {
-        StartCoroutine(LoadYourAsyncScene(toTravel));
-    }    public Player getPlayer()
+    }
+
+    public void changeCharacter(string text)
+    {
+        //character.sprite = Resources.Load("Assets/Sprites/Characters/" + text) as Sprite;
+    }
+
+    public void changeScene(string toTravel)
+
+    {
+        StartCoroutine(LoadYourAsyncScene(toTravel));
+    }
+
+    public Player getPlayer()
     {
         return player;
     }
