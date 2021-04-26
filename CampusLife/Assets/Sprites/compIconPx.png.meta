@@ -1,0 +1,309 @@
+fileFormatVersion: 2
+guid: 758fe10341e45a7458e38aa6f21b3251
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5834357068029054269
+    second: compIconPx_0
+  - first:
+      213: -6481748064565778483
+    second: compIconPx_1
+  - first:
+      213: 3533057897505806624
+    second: compIconPx_2
+  - first:
+      213: 8686709104842844157
+    second: compIconPx_3
+  - first:
+      213: -4618038946211219448
+    second: compIconPx_4
+  - first:
+      213: -1084455631729806968
+    second: compIconPx_5
+  - first:
+      213: -1937474999624778121
+    second: compIconPx_6
+  - first:
+      213: -8948406672769266907
+    second: compIconPx_7
+  - first:
+      213: -8096325341386086362
+    second: compIconPx_8
+  - first:
+      213: 3672814973890792366
+    second: compIconPx_9
+  - first:
+      213: 6660630904914749890
+    second: compIconPx_10
+  - first:
+      213: 7288070573197865561
+    second: compIconPx_11
+  - first:
+      213: 6740025855355571064
+    second: compIconPx_12
+  - first:
+      213: -838761608906164284
+    second: compIconPx_13
+  - first:
+      213: 2289579703449786239
+    second: compIconPx_14
+  - first:
+      213: 123514626183672232
+    second: compIconPx_15
+  - first:
+      213: 3643485225034288961
+    second: compIconPx_16
+  - first:
+      213: -5917786779774908973
+    second: compIconPx_17
+  - first:
+      213: -9189274353611767939
+    second: compIconPx_18
+  - first:
+      213: -6423061129292391981
+    second: compIconPx_19
+  - first:
+      213: -3464038748360353358
+    second: compIconPx_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: compIconPx_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3007
+        width: 827
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 85, y: 0, z: 145, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d49a477dcc7f050800000000000000
+      internalID: 5834357068029054269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: compIconPx_2
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 3001
+        width: 827
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 399, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029d8b75071f70130800000000000000
+      internalID: 3533057897505806624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: compIconPx_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2505
+        width: 827
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 74, y: 0, z: 145, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df72f4d18e36d8870800000000000000
+      internalID: 8686709104842844157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: compIconPx_5
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 2505
+        width: 827
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 327, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881b210495d33f0f0800000000000000
+      internalID: -1084455631729806968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: compIconPx_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2004.8572
+        width: 826.6667
+        height: 501.14285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 80, y: 0, z: 144, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e3a26c0c4bc15e0800000000000000
+      internalID: -1937474999624778121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: compIconPx_8
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 2016
+        width: 827
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 367, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62860b88ff214af80800000000000000
+      internalID: -8096325341386086362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

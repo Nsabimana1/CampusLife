@@ -792,11 +792,32 @@ MonoBehaviour:
   canvas: {fileID: 1280972172}
   dialogBox: {fileID: 827955667}
   dialogText: {fileID: 548283823}
+  nameText: {fileID: 0}
+  Resume: {fileID: 0}
+  ShowResumeButton: {fileID: 0}
+  HideResumeButton: {fileID: 0}
   Choice1: {fileID: 1832074533}
   Choice2: {fileID: 959150770}
+  menubackground: {fileID: 0}
+  sltc: {fileID: 0}
+  art: {fileID: 0}
+  bailey: {fileID: 0}
+  caf: {fileID: 0}
+  csoffice: {fileID: 0}
+  dwr: {fileID: 0}
+  ellis: {fileID: 0}
+  fausett: {fileID: 0}
+  martin: {fileID: 0}
+  mcr: {fileID: 0}
+  mills: {fileID: 0}
+  trieschmann: {fileID: 0}
+  wac: {fileID: 0}
+  tourguide: {fileID: 0}
+  logo: {fileID: 0}
   startButton: {fileID: 0}
   titleText: {fileID: 0}
-  player: {fileID: 4244778031657494750}
+  energy: 4
+  speed: 0.1
   music: {fileID: 0}
 --- !u!4 &1155346258
 Transform:
@@ -1616,14 +1637,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64f1ea60e146ea44d88a5179b4c97ec4, type: 3}
---- !u!114 &4244778031657494750 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 245968681820477158, guid: 64f1ea60e146ea44d88a5179b4c97ec4, type: 3}
-  m_PrefabInstance: {fileID: 4244778031657494749}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f93512c9a5a6c0348898fc8e615b7b84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
