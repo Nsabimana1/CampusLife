@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
 
     private TextMeshProUGUI DialogText;
     private TextMeshProUGUI ResumeText;
+    private TextMeshProUGUI NameText;
 
     private Coroutine dialogCo;
 
@@ -85,6 +86,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(Resume);
             DialogText = dialogText.GetComponent<TextMeshProUGUI>();
             ResumeText = Resume.GetComponentInChildren<TextMeshProUGUI>();
+            NameText = nameText.GetComponent<TextMeshProUGUI>();
         }
         else
         {
@@ -147,6 +149,11 @@ public class GameManager : MonoBehaviour
     public void SetDialog(string text)
     {
         DialogText.text = text;
+    }
+
+    public void SetName(string text)
+    {
+        NameText.text = text;
     }
 
     public void enableChoice()
