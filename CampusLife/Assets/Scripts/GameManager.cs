@@ -42,6 +42,8 @@ public class GameManager : MonoBehaviour
 
     [Header("Images")]
     public GameObject tourguide;
+    public GameObject bearman;
+    public GameObject briefcasehead;
     public Image logo;
 
     public GameObject startButton;
