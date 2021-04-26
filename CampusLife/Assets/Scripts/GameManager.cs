@@ -156,6 +156,13 @@ public class GameManager : MonoBehaviour
         NameText.text = text;
     }
 
+    public void SetDialogTextColor(byte r, byte g, byte b)
+    {
+        Color32 col = new Color32(r, g, b, 255);
+        DialogText.color = col;
+        NameText.color = col;
+    }
+
     public void enableChoice()
     {
         Choice1.SetActive(true);
