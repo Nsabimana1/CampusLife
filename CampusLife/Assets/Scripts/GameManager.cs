@@ -97,6 +97,11 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private void Update()
+    {
+        Debug.Log(textTyped);
+        Debug.Log(textBeTyping);
+    }
 
     public void showResume()
     {
@@ -127,9 +132,11 @@ public class GameManager : MonoBehaviour
         //text will stop and just print out the dialog in this case
         if(!textTyped && textBeTyping)
         {
+            dialogBox.SetActive(true);
             //print out entire dialog to dialog box and stop dialog typing
             StopDialog();
             SetDialog(text[index]);
+            textTyped = true;
         }
         else if(textTyped && textBeTyping)
         {
@@ -196,14 +203,14 @@ public class GameManager : MonoBehaviour
     IEnumerator TypeText(string text)
     {
         DialogText.text = "";
+        if (DialogText.text == text)
+        {
+            textTyped = true;
+        }
         foreach (char c in text.ToCharArray())
         {
             DialogText.text += c;
             yield return new WaitForSeconds(speed);
-        }
-        if(DialogText.text == text)
-        {
-            textTyped = true;
         }
     }
 
