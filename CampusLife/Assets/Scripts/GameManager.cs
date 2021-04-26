@@ -24,6 +24,9 @@ public class GameManager : MonoBehaviour
     public GameObject Choice1;
     public GameObject Choice2;
 
+    public GameObject startButton;
+    public GameObject titleText;
+
     [Header("Backgrounds")]
     public GameObject menubackground;
     public GameObject sltc;
@@ -46,12 +49,6 @@ public class GameManager : MonoBehaviour
     public GameObject briefcasehead;
     public Image logo;
 
-    public GameObject startButton;
-    public GameObject titleText;
-
-    private Player player;
-    private Resume resume;
-
     [Header("Scene Transition Stuff")]
     public int energy = 4;
 
@@ -60,6 +57,9 @@ public class GameManager : MonoBehaviour
 
     [Header("Music stuff")]
     public GameObject music;
+
+    private Player player;
+    private Resume resume;
 
     private TextMeshProUGUI DialogText;
     private TextMeshProUGUI ResumeText;
@@ -220,6 +220,9 @@ public class GameManager : MonoBehaviour
         nameText.SetActive(true);
         tourguide.SetActive(true);
         ShowResumeButton.SetActive(true);
+        SetName("Tour Guide");
+
+        changeScene("sltc");
     }
 
     public void changeElement(GameObject current, GameObject next)

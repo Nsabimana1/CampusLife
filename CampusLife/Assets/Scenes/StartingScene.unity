@@ -3282,6 +3282,8 @@ MonoBehaviour:
   HideResumeButton: {fileID: 1176419732}
   Choice1: {fileID: 994927614}
   Choice2: {fileID: 899534878}
+  startButton: {fileID: 1135133050}
+  titleText: {fileID: 931296228}
   menubackground: {fileID: 1705957961}
   sltc: {fileID: 1281415787}
   art: {fileID: 568423324}
@@ -3300,11 +3302,9 @@ MonoBehaviour:
   bearman: {fileID: 2089752408}
   briefcasehead: {fileID: 760550145}
   logo: {fileID: 1398017195}
-  startButton: {fileID: 1135133050}
-  titleText: {fileID: 931296228}
   energy: 4
   speed: 0.1
-  music: {fileID: 0}
+  music: {fileID: 280419331}
 --- !u!4 &1880512451
 Transform:
   m_ObjectHideFlags: 0
