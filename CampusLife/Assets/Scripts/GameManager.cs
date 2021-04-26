@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     public GameObject nameText;
 
     public GameObject Resume;
+    public GameObject ShowResumeButton;
+    public GameObject HideResumeButton;
 
     public GameObject Choice1;
     public GameObject Choice2;
@@ -97,9 +99,19 @@ public class GameManager : MonoBehaviour
     public void showResume()
     {
         Resume.SetActive(true);
+        HideResumeButton.SetActive(true);
+        ShowResumeButton.SetActive(false);
         //methods for showing the resume in the UI.
         ResumeText.text = resume.getResume();
     }
+
+    public void hideResume()
+    {
+        Resume.SetActive(false);
+        HideResumeButton.SetActive(false);
+        ShowResumeButton.SetActive(true);
+    }
+
     public void StartDialog(string[] text)
     {
         if(index >= text.Length)
@@ -200,11 +212,12 @@ public class GameManager : MonoBehaviour
         titleText.SetActive(false);
         logo.enabled = false;
 
+        changeElement(menubackground, sltc);
         dialogBox.SetActive(true);
         dialogText.SetActive(true);
         nameText.SetActive(true);
         tourguide.SetActive(true);
-        changeElement(menubackground, sltc);
+        ShowResumeButton.SetActive(true);
     }
 
     public void changeElement(GameObject current, GameObject next)
