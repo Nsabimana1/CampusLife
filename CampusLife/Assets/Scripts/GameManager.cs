@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject Choice1;
     public GameObject Choice2;
+    public GameObject Choice1Text;
+    public GameObject Choice2Text;
 
     public GameObject startButton;
     public GameObject titleText;
@@ -177,6 +179,16 @@ public class GameManager : MonoBehaviour
         NameText.text = text;
     }
 
+    public void SetChoice1Text(string text)
+    {
+        Choice1.GetComponentInChildren<Text>().text = text;
+    }
+
+    public void SetChoice2Text(string text)
+    {
+        Choice2.GetComponentInChildren<Text>().text = text;
+    }
+
     public void SetDialogTextColor(byte r, byte g, byte b)
     {
         Color32 col = new Color32(r, g, b, 255);
@@ -228,7 +240,8 @@ public class GameManager : MonoBehaviour
         tourguide.SetActive(true);
         ShowResumeButton.SetActive(true);
         SetName("Tour Guide");
-
+        SetChoice1Text("Next Stop");
+        SetChoice2Text("Next Stop");
         changeScene("sltc");
     }
 

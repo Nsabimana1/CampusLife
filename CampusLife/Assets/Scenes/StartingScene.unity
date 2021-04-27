@@ -3282,6 +3282,8 @@ MonoBehaviour:
   HideResumeButton: {fileID: 1176419732}
   Choice1: {fileID: 994927614}
   Choice2: {fileID: 899534878}
+  Choice1Text: {fileID: 1377590863}
+  Choice2Text: {fileID: 688768378}
   startButton: {fileID: 1135133050}
   titleText: {fileID: 931296228}
   menubackground: {fileID: 1705957961}
