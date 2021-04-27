@@ -47,7 +47,7 @@ public class Dialogue : MonoBehaviour
     // part of the dialogue.
     void Update()
     {
-        if(GameManager.Instance.getIndex() >= curDialog.Length)
+        if(GameManager.Instance.getIndex() >= curDialog.Length-1)
         {
             choiceMade = false;
             GameManager.Instance.enableChoice();
