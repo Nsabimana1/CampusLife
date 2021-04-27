@@ -246,6 +246,16 @@ public class GameManager : MonoBehaviour
         changeScene("sltc");
     }
 
+    public void choice1Pressed()
+    {
+        
+    }
+
+    public void choice2Pressed()
+    {
+        
+    }
+
     public void changeElement(GameObject current, GameObject next)
     {
         current.SetActive(false);
