@@ -128,6 +128,10 @@ public class GameManager : MonoBehaviour
     {
         return index;
     }
+    public void setIndex(int val)
+    {
+        index = val;
+    }
 
     public void StartDialog(string[] text)
     {

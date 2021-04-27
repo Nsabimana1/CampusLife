@@ -76,7 +76,7 @@ public class Dialogue : MonoBehaviour
         choiceMade = true;
         GameManager.Instance.increaseComp(effect1);
         curDialog = choice1;
-        i = 0;
+        GameManager.Instance.setIndex(0);
         Speak();
     }
     public void Choice2()
@@ -84,7 +84,7 @@ public class Dialogue : MonoBehaviour
         choiceMade = true;
         GameManager.Instance.increaseComp(effect2);
         curDialog = choice2;
-        i = 0;
+        GameManager.Instance.setIndex(0);
         Speak();
     }
 }
