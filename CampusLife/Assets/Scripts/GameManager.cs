@@ -23,8 +23,6 @@ public class GameManager : MonoBehaviour
 
     public GameObject Choice1;
     public GameObject Choice2;
-    public GameObject Choice1Text;
-    public GameObject Choice2Text;
 
     public GameObject startButton;
     public GameObject titleText;
