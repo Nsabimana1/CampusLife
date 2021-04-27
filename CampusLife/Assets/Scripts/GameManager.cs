@@ -141,7 +141,7 @@ public class GameManager : MonoBehaviour
         else if(textTyped && textBeTyping)
         {
             //clear text
-            DialogText.text = " ";
+            DialogText.text = "";
             //get new text
             index++;
             //start typing
@@ -149,7 +149,7 @@ public class GameManager : MonoBehaviour
             //reset bools properly
             textTyped = false;
         }
-        else if (!textTyped && !textBeTyping)
+        else //if (!textTyped && !textBeTyping)
         {
             dialogBox.SetActive(true);
             dialogCo = StartCoroutine(TypeText(text[index]));
