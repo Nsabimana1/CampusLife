@@ -47,10 +47,20 @@ public class Dialogue : MonoBehaviour
     // part of the dialogue.
     void Update()
     {
+        if(GameManager.Instance.getIndex() >= curDialog.Length)
+        {
+            choiceMade = false;
+            GameManager.Instance.enableChoice();
+        }
         if (Input.GetMouseButtonDown(0) && choiceMade)
         {
             Speak();
         }
+    }
+
+    public void switchChoiceMade(bool val)
+    {
+        choiceMade = val;
     }
 
     //Calls an instance of gamemanager and gives the i element
@@ -59,11 +69,6 @@ public class Dialogue : MonoBehaviour
     {
         GameManager.Instance.StartDialog(curDialog);
         i++;
-        if (i == Dialog.Length)
-        {
-            choiceMade = false;
-            GameManager.Instance.enableChoice();
-        }
     }
 
     public void Choice1()

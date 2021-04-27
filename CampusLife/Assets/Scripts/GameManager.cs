@@ -120,6 +120,11 @@ public class GameManager : MonoBehaviour
         ShowResumeButton.SetActive(true);
     }
 
+    public int getIndex()
+    {
+        return index;
+    }
+
     public void StartDialog(string[] text)
     {
         if(index >= text.Length)
