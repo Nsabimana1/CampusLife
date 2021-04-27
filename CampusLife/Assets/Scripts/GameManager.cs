@@ -101,6 +101,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log(textTyped);
         Debug.Log(textBeTyping);
+        Debug.Log(index);
     }
 
     public void showResume()
@@ -126,7 +127,6 @@ public class GameManager : MonoBehaviour
             index = 0;
         }
 
-
         //text will stop and just print out the dialog in this case
         if(!textTyped && textBeTyping)
         {
@@ -150,6 +150,7 @@ public class GameManager : MonoBehaviour
         else //if (!textTyped && !textBeTyping)
         {
             dialogBox.SetActive(true);
+            DialogText.text = "";
             dialogCo = StartCoroutine(TypeText(text[index]));
             textBeTyping = true;
         }
