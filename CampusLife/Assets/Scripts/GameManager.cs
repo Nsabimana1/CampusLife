@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
     private string toScene;
     private string choice1text;
     private string choice2text;
+    private string backgroundString;
 
     private void Awake()
     {
@@ -254,11 +255,12 @@ public class GameManager : MonoBehaviour
         changeScene("sltc");
     }
 
-    public void setChoices(string nextScene, string c1, string c2)
+    public void setChoices(string nextScene, string c1, string c2, string bck)
     {
         toScene = nextScene;
         choice1text = c1;
         choice2text = c2;
+        backgroundString = bck;
     }
 
     public void choice1Pressed()
@@ -266,6 +268,7 @@ public class GameManager : MonoBehaviour
         changeScene(toScene);
         SetChoice1Text(choice1text);
         SetChoice2Text(choice2text);
+        changeBackground(backgroundString);
     }
 
     public void choice2Pressed()
@@ -273,6 +276,86 @@ public class GameManager : MonoBehaviour
         changeScene(toScene);
         SetChoice1Text(choice1text);
         SetChoice2Text(choice2text);
+        changeBackground(backgroundString);
+    }
+
+    public void changeBackground(string s)
+    {
+        disableAllBackgrounds();
+        if (s == "sltc")
+        {
+            sltc.SetActive(true);
+        }
+        else if (s == "art")
+        {
+            art.SetActive(true);
+        }
+        else if (s == "bailey")
+        {
+            bailey.SetActive(true);
+        }
+        else if (s == "caf")
+        {
+            caf.SetActive(true);
+        }
+        else if (s == "csoffice")
+        {
+            csoffice.SetActive(true);
+        }
+        else if (s == "dwr")
+        {
+            dwr.SetActive(true);
+        }
+        else if (s == "ellis")
+        {
+            ellis.SetActive(true);
+        }
+        else if (s == "fausett")
+        {
+            fausett.SetActive(true);
+        }
+        else if (s == "martin")
+        {
+            martin.SetActive(true);
+        }
+        else if (s == "mcr")
+        {
+            mcr.SetActive(true);
+        }
+        else if (s == "mills")
+        {
+            mills.SetActive(true);
+        }
+        else if (s == "trieschmann")
+        {
+            trieschmann.SetActive(true);
+        }
+        else if (s == "wac")
+        {
+            wac.SetActive(true);
+        }
+        else
+        {
+            menubackground.SetActive(true);
+        }
+    }
+
+    public void disableAllBackgrounds()
+    {
+        menubackground.SetActive(false);
+        sltc.SetActive(false);
+        art.SetActive(false);
+        bailey.SetActive(false);
+        caf.SetActive(false);
+        csoffice.SetActive(false);
+        dwr.SetActive(false);
+        ellis.SetActive(false);
+        fausett.SetActive(false);
+        martin.SetActive(false);
+        mcr.SetActive(false);
+        mills.SetActive(false);
+        trieschmann.SetActive(false);
+        wac.SetActive(false);
     }
 
     public void changeElement(GameObject current, GameObject next)
