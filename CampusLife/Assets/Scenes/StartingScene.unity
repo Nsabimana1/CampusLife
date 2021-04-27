@@ -3303,7 +3303,7 @@ MonoBehaviour:
   briefcasehead: {fileID: 760550145}
   logo: {fileID: 1398017195}
   energy: 4
-  speed: 0.1
+  speed: 0.05
   music: {fileID: 280419331}
 --- !u!4 &1880512451
 Transform:
