@@ -283,8 +283,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: csoffice
-  choice1text: To Career Services
-  choice2text: To Career Services
+  choice1text: Move Along
+  choice2text: Continue!
 --- !u!4 &1386804714
 Transform:
   m_ObjectHideFlags: 0

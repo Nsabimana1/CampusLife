@@ -246,7 +246,7 @@ public class GameManager : MonoBehaviour
         ShowResumeButton.SetActive(true);
         SetName("Tour Guide");
         SetChoice1Text("Next Stop");
-        SetChoice2Text("Next Stop");
+        SetChoice2Text("Onward!");
         changeScene("sltc");
     }
 

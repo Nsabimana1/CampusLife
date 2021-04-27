@@ -283,8 +283,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: caf
-  choice1text: To Cafeteria
-  choice2text: To Cafeteria
+  choice1text: Next Up
+  choice2text: Lets Go!
 --- !u!4 &1632174389
 Transform:
   m_ObjectHideFlags: 0
