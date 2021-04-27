@@ -118,6 +118,15 @@ public class GameManager : MonoBehaviour
         ResumeText.text = resume.getResume();
     }
 
+    public GameObject getButton1()
+    {
+        return Choice1;
+    }
+    public GameObject getButton2()
+    {
+        return Choice2;
+    }
+
     public void hideResume()
     {
         Resume.SetActive(false);
@@ -263,8 +272,14 @@ public class GameManager : MonoBehaviour
         backgroundString = bck;
     }
 
+    public void resetButtons()
+    {
+
+    }
+
     public void choice1Pressed()
     {
+        index = 0;
         changeScene(toScene);
         SetChoice1Text(choice1text);
         SetChoice2Text(choice2text);
@@ -273,6 +288,7 @@ public class GameManager : MonoBehaviour
 
     public void choice2Pressed()
     {
+        index = 0;
         changeScene(toScene);
         SetChoice1Text(choice1text);
         SetChoice2Text(choice2text);
