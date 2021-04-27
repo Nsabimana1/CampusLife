@@ -72,6 +72,10 @@ public class GameManager : MonoBehaviour
 
     private int index = 0;
 
+    private string toScene;
+    private string choice1text;
+    private string choice2text;
+
     private void Awake()
     {
         player = gameObject.AddComponent(typeof(Player)) as Player;
@@ -246,14 +250,25 @@ public class GameManager : MonoBehaviour
         changeScene("sltc");
     }
 
+    public void setChoices(string nextScene, string c1, string c2)
+    {
+        toScene = nextScene;
+        choice1text = c1;
+        choice2text = c2;
+    }
+
     public void choice1Pressed()
     {
-        
+        changeScene(toScene);
+        SetChoice1Text(choice1text);
+        SetChoice2Text(choice2text);
     }
 
     public void choice2Pressed()
     {
-        
+        changeScene(toScene);
+        SetChoice1Text(choice1text);
+        SetChoice2Text(choice2text);
     }
 
     public void changeElement(GameObject current, GameObject next)

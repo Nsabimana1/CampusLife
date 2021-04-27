@@ -5,9 +5,14 @@ using UnityEngine;
 public class Choice : MonoBehaviour
 {
 
+    public string toScene;
+    public string choice1text;
+    public string choice2text;
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
+        GameManager.Instance.setChoices(toScene, choice1text, choice2text);
     }
 
     // Update is called once per frame
@@ -18,4 +23,5 @@ public class Choice : MonoBehaviour
     {
 
     }
+
 }
