@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: fausett
-  choice1text: To Cafeteria
-  choice2text: To Cafeteria
+  choice1text: Next stop
+  choice2text: Continue
 --- !u!4 &721406879
 Transform:
   m_ObjectHideFlags: 0
