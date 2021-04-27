@@ -125,10 +125,8 @@ public class GameManager : MonoBehaviour
         {
             index = 0;
         }
-        if (dialogCo != null)
-        {
-            HideDialog();
-        }
+
+
         //text will stop and just print out the dialog in this case
         if(!textTyped && textBeTyping)
         {
@@ -212,7 +210,6 @@ public class GameManager : MonoBehaviour
 
     IEnumerator TypeText(string text)
     {
-        DialogText.text = "";
         if (DialogText.text == text)
         {
             textTyped = true;
