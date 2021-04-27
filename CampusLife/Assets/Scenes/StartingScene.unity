@@ -2776,8 +2776,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -23.297394}
-  m_SizeDelta: {x: 960, y: 179.7996}
+  m_AnchoredPosition: {x: 0, y: -23}
+  m_SizeDelta: {x: 940, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1694642067
 MonoBehaviour:
@@ -3143,8 +3143,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 85}
-  m_SizeDelta: {x: 960, y: 50}
+  m_AnchoredPosition: {x: 0, y: 91}
+  m_SizeDelta: {x: 940, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1827452382
 MonoBehaviour:
@@ -3282,8 +3282,6 @@ MonoBehaviour:
   HideResumeButton: {fileID: 1176419732}
   Choice1: {fileID: 994927614}
   Choice2: {fileID: 899534878}
-  Choice1Text: {fileID: 1377590863}
-  Choice2Text: {fileID: 688768378}
   startButton: {fileID: 1135133050}
   titleText: {fileID: 931296228}
   menubackground: {fileID: 1705957961}
