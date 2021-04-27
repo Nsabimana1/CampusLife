@@ -2799,7 +2799,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dialog text goes here
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dcc8200c64b38744893efe07b23a5369, type: 2}
   m_sharedMaterial: {fileID: 1329345971614858228, guid: dcc8200c64b38744893efe07b23a5369, type: 2}
@@ -3166,7 +3166,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Character Name
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dcc8200c64b38744893efe07b23a5369, type: 2}
   m_sharedMaterial: {fileID: 1329345971614858228, guid: dcc8200c64b38744893efe07b23a5369, type: 2}
