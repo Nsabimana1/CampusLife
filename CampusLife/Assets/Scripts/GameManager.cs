@@ -284,6 +284,7 @@ public class GameManager : MonoBehaviour
         SetChoice1Text(choice1text);
         SetChoice2Text(choice2text);
         changeBackground(backgroundString);
+        disableChoice();
     }
 
     public void choice2Pressed()
@@ -293,6 +294,7 @@ public class GameManager : MonoBehaviour
         SetChoice1Text(choice1text);
         SetChoice2Text(choice2text);
         changeBackground(backgroundString);
+        disableChoice();
     }
 
     public void changeBackground(string s)
