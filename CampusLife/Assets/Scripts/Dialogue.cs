@@ -17,6 +17,7 @@ public class Dialogue : MonoBehaviour
     private string temp;
     private int i = 0;
     private bool choiceMade = true;
+    private bool makeAChoice = false;
 
     //variable that temporarily stores all choices
     private string[] choices;
@@ -47,12 +48,12 @@ public class Dialogue : MonoBehaviour
     // part of the dialogue.
     void Update()
     {
-        if(GameManager.Instance.getIndex() >= curDialog.Length-1)
+        if(GameManager.Instance.getIndex() >= curDialog.Length-1 && !makeAChoice)
         {
-            choiceMade = false;
             GameManager.Instance.enableChoice();
+            makeAChoice = true;
         }
-        if (Input.GetMouseButtonDown(0) && choiceMade)
+        if (Input.GetMouseButtonDown(0) && choiceMade && !makeAChoice)
         {
             Speak();
         }
@@ -62,6 +63,7 @@ public class Dialogue : MonoBehaviour
     {
         choiceMade = val;
     }
+
 
     //Calls an instance of gamemanager and gives the i element
     //in the dialog array to the method StartDialog

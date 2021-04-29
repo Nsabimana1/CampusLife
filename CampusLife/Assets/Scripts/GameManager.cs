@@ -77,6 +77,8 @@ public class GameManager : MonoBehaviour
     private string choice2text;
     private string backgroundString;
 
+    private string curDialog = "";
+
     private void Awake()
     {
         player = gameObject.AddComponent(typeof(Player)) as Player;
@@ -107,6 +109,14 @@ public class GameManager : MonoBehaviour
         Debug.Log(textTyped);
         Debug.Log(textBeTyping);
         Debug.Log(index);
+    }
+
+    private void FixedUpdate()
+    {
+        if (DialogText.text == curDialog)
+        {
+            textTyped = true;
+        }
     }
 
     public void showResume()
@@ -150,6 +160,8 @@ public class GameManager : MonoBehaviour
             index = 0;
         }
 
+        curDialog = text[index];
+
         //text will stop and just print out the dialog in this case
         if(!textTyped && textBeTyping)
         {
@@ -170,7 +182,7 @@ public class GameManager : MonoBehaviour
             //reset bools properly
             textTyped = false;
         }
-        else //if (!textTyped && !textBeTyping)
+        else if (textTyped && !textBeTyping)
         {
             dialogBox.SetActive(true);
             DialogText.text = "";
@@ -234,10 +246,6 @@ public class GameManager : MonoBehaviour
 
     IEnumerator TypeText(string text)
     {
-        if (DialogText.text == text)
-        {
-            textTyped = true;
-        }
         foreach (char c in text.ToCharArray())
         {
             DialogText.text += c;
