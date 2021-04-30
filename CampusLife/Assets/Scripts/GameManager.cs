@@ -70,6 +70,8 @@ public class GameManager : MonoBehaviour
     private bool textTyped;
     private bool textBeTyping;
 
+    public bool choiceMake = false;
+
     private int index = 0;
 
     private string toScene;
@@ -113,8 +115,9 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (DialogText.text == curDialog)
+        if (dialogText.GetComponent<TextMeshProUGUI>().text == curDialog)
         {
+            Debug.Log("TextTyped should be true");
             textTyped = true;
         }
     }
@@ -160,7 +163,6 @@ public class GameManager : MonoBehaviour
             index = 0;
         }
 
-        curDialog = text[index];
 
         //text will stop and just print out the dialog in this case
         if(!textTyped && textBeTyping)
@@ -179,10 +181,11 @@ public class GameManager : MonoBehaviour
             index++;
             //start typing
             dialogCo = StartCoroutine(TypeText(text[index]));
+            curDialog = text[index];
             //reset bools properly
             textTyped = false;
         }
-        else if (textTyped && !textBeTyping)
+        else //if (textTyped && !textBeTyping)
         {
             dialogBox.SetActive(true);
             DialogText.text = "";

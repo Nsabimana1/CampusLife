@@ -53,9 +53,13 @@ public class Dialogue : MonoBehaviour
             GameManager.Instance.enableChoice();
             makeAChoice = true;
         }
-        if (Input.GetMouseButtonDown(0) && choiceMade && !makeAChoice)
+        if (Input.GetMouseButtonDown(0) && choiceMade)
         {
             Speak();
+            if (makeAChoice)
+            {
+                choiceMade = false;
+            }
         }
     }
 
