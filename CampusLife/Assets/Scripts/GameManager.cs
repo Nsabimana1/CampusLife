@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour
     private int index = 0;
 
     private string toScene;
+    private string otherScene;
     private string choice1text;
     private string choice2text;
     private string backgroundString;
@@ -110,16 +111,16 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(textTyped);
-        Debug.Log(textBeTyping);
-        Debug.Log(index);
+        //Debug.Log(textTyped);
+        //Debug.Log(textBeTyping);
+        //Debug.Log(index);
     }
 
     private void FixedUpdate()
     {
         if (dialogText.GetComponent<TextMeshProUGUI>().text == curDialog)
         {
-            Debug.Log("TextTyped should be true");
+            //Debug.Log("TextTyped should be true");
             textTyped = true;
         }
     }
@@ -277,9 +278,10 @@ public class GameManager : MonoBehaviour
         changeScene("sltc");
     }
 
-    public void setChoices(string nextScene, string c1, string c2, string bck, string ch)
+    public void setChoices(string nextScene, string secondScene, string c1, string c2, string bck)
     {
         toScene = nextScene;
+        otherScene = secondScene;
         choice1text = c1;
         choice2text = c2;
         backgroundString = bck;
@@ -305,7 +307,7 @@ public class GameManager : MonoBehaviour
     public void choice2Pressed()
     {
         index = 0;
-        changeScene(toScene);
+        changeScene(otherScene);
         SetChoice1Text(choice1text);
         SetChoice2Text(choice2text);
         changeBackground(backgroundString);
@@ -435,6 +437,7 @@ public class GameManager : MonoBehaviour
 
     public void changeScene(string toTravel)
     {
+        Debug.Log(toTravel);
         StartCoroutine(LoadYourAsyncScene(toTravel));
     }
 
