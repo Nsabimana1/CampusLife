@@ -285,6 +285,7 @@ MonoBehaviour:
   toScene: csoffice
   choice1text: Move Along
   choice2text: Continue!
+  character: tourguide
 --- !u!4 &1386804714
 Transform:
   m_ObjectHideFlags: 0

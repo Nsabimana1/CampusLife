@@ -155,6 +155,7 @@ MonoBehaviour:
   toScene: fausett
   choice1text: Next stop
   choice2text: Continue
+  character: tourguide
 --- !u!4 &721406879
 Transform:
   m_ObjectHideFlags: 0

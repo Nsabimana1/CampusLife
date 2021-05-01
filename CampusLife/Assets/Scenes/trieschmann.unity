@@ -155,6 +155,7 @@ MonoBehaviour:
   toScene: ellis
   choice1text: Next building
   choice2text: Keep going
+  character: tourguide
 --- !u!4 &146107432
 Transform:
   m_ObjectHideFlags: 0

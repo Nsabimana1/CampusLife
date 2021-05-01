@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     public GameObject mills;
     public GameObject trieschmann;
     public GameObject wac;
+    public GameObject careerfair;
 
     [Header("Images")]
     public GameObject tourguide;
@@ -78,6 +79,7 @@ public class GameManager : MonoBehaviour
     private string choice1text;
     private string choice2text;
     private string backgroundString;
+    private string character;
 
     private string curDialog = "";
 
@@ -275,12 +277,13 @@ public class GameManager : MonoBehaviour
         changeScene("sltc");
     }
 
-    public void setChoices(string nextScene, string c1, string c2, string bck)
+    public void setChoices(string nextScene, string c1, string c2, string bck, string ch)
     {
         toScene = nextScene;
         choice1text = c1;
         choice2text = c2;
         backgroundString = bck;
+        character = ch;
     }
 
     public void resetButtons()
@@ -296,6 +299,7 @@ public class GameManager : MonoBehaviour
         SetChoice2Text(choice2text);
         changeBackground(backgroundString);
         disableChoice();
+        changeCharacter(character);
     }
 
     public void choice2Pressed()
@@ -306,6 +310,37 @@ public class GameManager : MonoBehaviour
         SetChoice2Text(choice2text);
         changeBackground(backgroundString);
         disableChoice();
+        changeCharacter(character);
+    }
+
+    public void changeCharacter(string s)
+    {
+        disableAllChar();
+        if (s == "tourguide")
+        {
+            tourguide.SetActive(true);
+            SetName("Tour Guide");
+            //SetDialogTextColor(245, 130, 42)
+        }
+        else if (s == "bearman")
+        {
+            bearman.SetActive(true);
+            SetName("placeholder");
+            //SetDialogTextColor(245, 130, 42)
+        }
+        else if (s == "briefcasehead")
+        {
+            briefcasehead.SetActive(true);
+            SetName("Employer");
+            //SetDialogTextColor(245, 130, 42)
+        }
+    }
+
+    public void disableAllChar()
+    {
+        tourguide.SetActive(false);
+        bearman.SetActive(false);
+        briefcasehead.SetActive(false);
     }
 
     public void changeBackground(string s)
@@ -363,6 +398,10 @@ public class GameManager : MonoBehaviour
         {
             wac.SetActive(true);
         }
+        else if (s == "careerfair")
+        {
+            careerfair.SetActive(true);
+        }
         else
         {
             menubackground.SetActive(true);
@@ -385,6 +424,7 @@ public class GameManager : MonoBehaviour
         mills.SetActive(false);
         trieschmann.SetActive(false);
         wac.SetActive(false);
+        careerfair.SetActive(false);
     }
 
     public void changeElement(GameObject current, GameObject next)

@@ -285,6 +285,7 @@ MonoBehaviour:
   toScene: trieschmann
   choice1text: Onward!
   choice2text: Keep going
+  character: tourguide
 --- !u!4 &1735535706
 Transform:
   m_ObjectHideFlags: 0

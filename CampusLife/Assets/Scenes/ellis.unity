@@ -202,6 +202,7 @@ MonoBehaviour:
   toScene: art
   choice1text: Move along
   choice2text: Continue
+  character: tourguide
 --- !u!4 &1077512136
 Transform:
   m_ObjectHideFlags: 0

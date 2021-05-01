@@ -155,6 +155,7 @@ MonoBehaviour:
   toScene: bailey
   choice1text: Move Along
   choice2text: Lets Go!
+  character: tourguide
 --- !u!4 &432132634
 Transform:
   m_ObjectHideFlags: 0

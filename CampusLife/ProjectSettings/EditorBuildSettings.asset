@@ -47,5 +47,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/wac.unity
     guid: b324bf2b6bd022f419a3f772da65424f
+  - enabled: 1
+    path: Assets/Scenes/careerfair.unity
+    guid: a67fd5331bf8db146af3b358c68c60d5
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 58d6a3cb28d64ed4297d7c893b5bd606, type: 2}

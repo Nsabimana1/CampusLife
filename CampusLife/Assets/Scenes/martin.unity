@@ -152,9 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09d0218dae2a2a4493be733161fda94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: martin
-  choice1text: Thanks!
-  choice2text: Goodnight.
+  toScene: careerfair
+  choice1text: Internship
+  choice2text: Employment
+  character: briefcasehead
 --- !u!4 &39281066
 Transform:
   m_ObjectHideFlags: 0

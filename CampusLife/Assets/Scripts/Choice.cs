@@ -8,11 +8,12 @@ public class Choice : MonoBehaviour
     public string toScene;
     public string choice1text;
     public string choice2text;
+    public string character;
  
     // Start is called before the first frame update
     private void Start()
     {
-        GameManager.Instance.setChoices(toScene, choice1text, choice2text, toScene);
+        GameManager.Instance.setChoices(toScene, choice1text, choice2text, toScene, character);
     }
 
     // Update is called once per frame

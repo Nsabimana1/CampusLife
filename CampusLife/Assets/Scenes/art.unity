@@ -153,8 +153,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: wac
-  choice1text: Next up
-  choice2text: Next stop
+  choice1text: Final stop
+  choice2text: To dorm
+  character: tourguide
 --- !u!4 &716262309
 Transform:
   m_ObjectHideFlags: 0
