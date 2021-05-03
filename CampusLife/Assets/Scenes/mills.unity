@@ -153,9 +153,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: bailey
-  choice1text: Move Along
-  choice2text: Lets Go!
+  otherScene: martin
+  choice1text: To DWR
+  choice2text: Skip tour
+  other1text: To career fair
+  other2text: To career fair
   character: tourguide
+  othercharacter: tourguide
 --- !u!4 &432132634
 Transform:
   m_ObjectHideFlags: 0

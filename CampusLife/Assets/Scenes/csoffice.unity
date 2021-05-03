@@ -283,9 +283,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: caf
-  choice1text: Next Up
-  choice2text: Lets Go!
+  otherScene: martin
+  choice1text: To MCR
+  choice2text: Skip tour
+  other1text: To career fair
+  other2text: To career fair
   character: tourguide
+  othercharacter: tourguide
 --- !u!4 &1632174389
 Transform:
   m_ObjectHideFlags: 0

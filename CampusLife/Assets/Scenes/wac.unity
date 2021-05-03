@@ -200,9 +200,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: martin
-  choice1text: To job fair
+  otherScene: martin
+  choice1text: To career fair
   choice2text: To career fair
+  other1text: To career fair
+  other2text: To career fair
   character: tourguide
+  othercharacter: tourguide
 --- !u!4 &1127562304
 Transform:
   m_ObjectHideFlags: 0

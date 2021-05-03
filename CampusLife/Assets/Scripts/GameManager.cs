@@ -79,8 +79,10 @@ public class GameManager : MonoBehaviour
     private string otherScene;
     private string choice1text;
     private string choice2text;
-    private string backgroundString;
+    private string other1text;
+    private string other2text;
     private string character;
+    private string othercharacter;
 
     private string curDialog = "";
 
@@ -273,19 +275,21 @@ public class GameManager : MonoBehaviour
         tourguide.SetActive(true);
         ShowResumeButton.SetActive(true);
         SetName("Tour Guide");
-        SetChoice1Text("Next Stop");
-        SetChoice2Text("Onward!");
+        SetChoice1Text("Take tour");
+        SetChoice2Text("Skip tour");
         changeScene("sltc");
     }
 
-    public void setChoices(string nextScene, string secondScene, string c1, string c2, string bck)
+    public void setChoices(string nextScene, string secondScene, string c1, string c2, string o1, string o2, string ch, string och)
     {
         toScene = nextScene;
         otherScene = secondScene;
         choice1text = c1;
         choice2text = c2;
-        backgroundString = bck;
+        other1text = o1;
+        other2text = o2;
         character = ch;
+        othercharacter = och;
     }
 
     public void resetButtons()
@@ -299,7 +303,7 @@ public class GameManager : MonoBehaviour
         changeScene(toScene);
         SetChoice1Text(choice1text);
         SetChoice2Text(choice2text);
-        changeBackground(backgroundString);
+        changeBackground(toScene);
         disableChoice();
         changeCharacter(character);
     }
@@ -308,11 +312,11 @@ public class GameManager : MonoBehaviour
     {
         index = 0;
         changeScene(otherScene);
-        SetChoice1Text(choice1text);
-        SetChoice2Text(choice2text);
-        changeBackground(backgroundString);
+        SetChoice1Text(other1text);
+        SetChoice2Text(other2text);
+        changeBackground(otherScene);
         disableChoice();
-        changeCharacter(character);
+        changeCharacter(othercharacter);
     }
 
     public void changeCharacter(string s)

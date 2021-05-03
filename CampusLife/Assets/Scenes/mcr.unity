@@ -200,9 +200,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: mills
-  choice1text: Next Stop
-  choice2text: Continue
+  otherScene: martin
+  choice1text: To Bailey
+  choice2text: Skip tour
+  other1text: To career fair
+  other2text: To career fair
   character: tourguide
+  othercharacter: tourguide
 --- !u!4 &1220820012
 Transform:
   m_ObjectHideFlags: 0

@@ -153,9 +153,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: fausett
-  choice1text: Next stop
-  choice2text: Continue
+  otherScene: martin
+  choice1text: Trieschmann
+  choice2text: Skip tour
+  other1text: To career fair
+  other2text: To career fair
   character: tourguide
+  othercharacter: tourguide
 --- !u!4 &721406879
 Transform:
   m_ObjectHideFlags: 0

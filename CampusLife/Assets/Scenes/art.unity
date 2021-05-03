@@ -153,9 +153,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: wac
+  otherScene: martin
   choice1text: Final stop
   choice2text: To dorm
+  other1text: To career fair
+  other2text: To career fair
   character: tourguide
+  othercharacter: tourguide
 --- !u!4 &716262309
 Transform:
   m_ObjectHideFlags: 0
