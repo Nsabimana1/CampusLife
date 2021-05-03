@@ -153,9 +153,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: careerfair
+  otherScene: careerfair
   choice1text: Internship
   choice2text: Employment
+  other1text: Internship
+  other2text: Employment
   character: briefcasehead
+  othercharacter: briefcasehead
 --- !u!4 &39281066
 Transform:
   m_ObjectHideFlags: 0
