@@ -7,7 +7,7 @@ public class Resume : MonoBehaviour
     public TextAsset ResumeText;
     private int[] c;
     private string[] ResumeHeaders = new string[] { "Skills:","Experience:"};
-    private string[] theResume;
+    private string[] theResume = new string[] { };
     private string[][] possibleString;
     // Start is called before the first frame update
     void Start()
@@ -56,17 +56,39 @@ public class Resume : MonoBehaviour
     public string getResume()
     {
         string wholeResume = " ";
-        for(int i = 0; i < theResume.Length; i++)
+        if (theResume.Length != 0)
         {
-            if(i == 0)
+            for (int i = 0; i < theResume.Length; i++)
             {
-                wholeResume = wholeResume + ResumeHeaders[i];
+                if (i == 0)
+                {
+                    wholeResume = wholeResume + ResumeHeaders[0] + "\n";
+                }
+                else if (i == 6)
+                {
+                    wholeResume = wholeResume + ResumeHeaders[1] + "\n";
+                }
+                wholeResume = wholeResume + theResume[i] + "\n";
             }
-            else if(i == 6)
+        }
+        else
+        {
+            for (int i = 0; i < 7; i++)
             {
-                wholeResume = wholeResume + ResumeHeaders[2];
+                if (i == 0)
+                {
+                    wholeResume = wholeResume + ResumeHeaders[0] + "\n";
+                }
+                else if (i == 6)
+                {
+                    wholeResume = wholeResume + ResumeHeaders[1] + "\n";
+                    continue;
+                }
+                else if (i % 2 == 0)
+                {
+                    wholeResume = wholeResume + "\n";
+                }
             }
-            wholeResume = wholeResume + theResume[i];
         }
         return wholeResume;
     }
