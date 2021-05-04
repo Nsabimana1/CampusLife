@@ -461,6 +461,10 @@ public class GameManager : MonoBehaviour
         trieschmann.SetActive(false);
         wac.SetActive(false);
         careerfair.SetActive(false);
+        volunteer.SetActive(false);
+        csmeeting.SetActive(false);
+        hirehendrix.SetActive(false);
+        careerterm.SetActive(false);
     }
 
     public void changeElement(GameObject current, GameObject next)

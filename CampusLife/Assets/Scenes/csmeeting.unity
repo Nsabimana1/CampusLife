@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allText: {fileID: 4900000, guid: 9d3ac08e8cea63545bc35e6af766a428, type: 3}
   effect1: 0
-  effect2: 0
+  effect2: 1
 --- !u!4 &278370850
 Transform:
   m_ObjectHideFlags: 0
