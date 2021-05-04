@@ -243,6 +243,7 @@ MonoBehaviour:
   other2text: Career Term
   character: bearman
   othercharacter: bearman
+  comp: 
 --- !u!4 &671539394
 Transform:
   m_ObjectHideFlags: 0
@@ -288,8 +289,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allText: {fileID: 4900000, guid: 6ae9ddc6428f4ad4ba4d1a98def39326, type: 3}
   choiceText: {fileID: 4900000, guid: 090834e020be8ea46827bacc2d36b9fd, type: 3}
-  effect1: 0
-  effect2: 1
+  effect1: 4
+  effect2: 2
 --- !u!4 &1631196053
 Transform:
   m_ObjectHideFlags: 0

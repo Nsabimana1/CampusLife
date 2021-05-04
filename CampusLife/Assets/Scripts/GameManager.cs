@@ -291,6 +291,11 @@ public class GameManager : MonoBehaviour
         othercharacter = och;
     }
 
+    public void updateComp(string comp)
+    {
+
+    }
+
     public void resetButtons()
     {
 
