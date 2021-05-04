@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d91198e06c6b0a7408d028d1226be006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allText: {fileID: 0}
+  allText: {fileID: 4900000, guid: d739f15992b2b0a4a867a49afc7e2a95, type: 3}
   effect1: 0
   effect2: 0
 --- !u!4 &755180439
