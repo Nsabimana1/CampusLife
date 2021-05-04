@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
     public GameObject volunteer;
     public GameObject hirehendrix;
     public GameObject csmeeting;
+    public GameObject careerterm;
 
     [Header("Images")]
     public GameObject tourguide;
@@ -432,6 +433,11 @@ public class GameManager : MonoBehaviour
         {
             csmeeting.SetActive(true);
         }
+        else if (s == "careerterm")
+        {
+            careerterm.SetActive(true);
+        }
+
         else
         {
             menubackground.SetActive(true);

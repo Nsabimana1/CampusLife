@@ -167,7 +167,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allText: {fileID: 4900000, guid: 8a83a60fc783af24a80a56da6e5eb859, type: 3}
-  choiceText: {fileID: 4900000, guid: 140a6b56c89b2334bbf9bb15e1655ad4, type: 3}
   effect1: 0
   effect2: 1
 --- !u!1 &1327873582
@@ -214,13 +213,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toScene: volunteer
-  otherScene: 
+  otherScene: hirehendrix
   choice1text: Career Office
   choice2text: Hire Hendrix
-  other1text: 
-  other2text: 
+  other1text: Career Office
+  other2text: Career Term
   character: briefcasehead
-  othercharacter: 
+  othercharacter: bearman
+  comp: 
 --- !u!1 &2050359806
 GameObject:
   m_ObjectHideFlags: 0

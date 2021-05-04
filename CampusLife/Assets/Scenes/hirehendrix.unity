@@ -152,14 +152,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09d0218dae2a2a4493be733161fda94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: 
-  otherScene: 
-  choice1text: 
-  choice2text: 
+  toScene: csmeeting
+  otherScene: careerterm
+  choice1text: Hire Hendrix
+  choice2text: Career Term
   other1text: 
   other2text: 
-  character: 
-  othercharacter: 
+  character: bearman
+  othercharacter: bearman
   comp: 
 --- !u!4 &625908149
 Transform:
