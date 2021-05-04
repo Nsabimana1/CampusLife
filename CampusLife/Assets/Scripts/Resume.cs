@@ -5,15 +5,14 @@ using UnityEngine;
 public class Resume : MonoBehaviour
 {
     public TextAsset ResumeText;
+    //We store the competencies the player has
     private int[] c;
+    //headers for the resume
     private string[] ResumeHeaders = new string[] { "Skills:","Experience:"};
+    //array representing the resume, might change to a list
     private string[] theResume = new string[] { };
+    // a huge array of all possible string. First [] is competencies, second [] is the level of competency
     private string[][] possibleString;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
