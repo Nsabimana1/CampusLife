@@ -116,7 +116,7 @@ public class GameManager : MonoBehaviour
     {
         //Debug.Log(textTyped);
         //Debug.Log(textBeTyping);
-        //Debug.Log(index);
+        Debug.Log(index);
     }
 
     private void FixedUpdate()
@@ -166,7 +166,10 @@ public class GameManager : MonoBehaviour
 
     public void StartDialog(string[] text)
     {
-        if (index >= text.Length) { index = 0; }
+        if (index >= text.Length) 
+        { 
+            index = 0; 
+        }
         //text will stop and just print out the dialog in this case
         if(!textTyped && textBeTyping)
         {
@@ -180,10 +183,10 @@ public class GameManager : MonoBehaviour
         {
             //clear text
             DialogText.text = "";
-            //get new text
-            index++;
             //start typing
             dialogCo = StartCoroutine(TypeText(text[index]));
+            //Get new text
+            index++;
             curDialog = text[index];
             //reset bools properly
             textTyped = false;
