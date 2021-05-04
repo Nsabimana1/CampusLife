@@ -6,7 +6,6 @@ using UnityEngine;
 public class Dialogue : MonoBehaviour
 {
     public TextAsset allText;
-    //public TextAsset choiceText;
 
     //variables determining which choices effect what competencies.
     [Range(0, 5)]
@@ -14,30 +13,17 @@ public class Dialogue : MonoBehaviour
     [Range(0, 5)]
     public int effect2;
 
-    private string temp;
     private int i = 0;
     private bool choiceMade = true;
     private bool makeAChoice = false;
 
-    //variable that temporarily stores all choices
-    private string[] choices;
-
     private string[] Dialog;
-    private string[] choice1;
-    private string[] choice2;
     private string[] curDialog;
 
     // Start is called before the first frame update
     void Start()
     {
         Dialog = allText.ToString().Split('*');
-        temp = choiceText.ToString();
-        if (temp != "") 
-        { 
-            choices = temp.Split('|');
-            choice1 = choices[0].Split('*');
-            choice2 = choices[1].Split('*');
-        }
         curDialog = Dialog;
         Speak();
     }
@@ -81,7 +67,6 @@ public class Dialogue : MonoBehaviour
     {
         choiceMade = true;
         GameManager.Instance.increaseComp(effect1);
-        curDialog = choice1;
         GameManager.Instance.setIndex(0);
         Speak();
     }
@@ -89,7 +74,6 @@ public class Dialogue : MonoBehaviour
     {
         choiceMade = true;
         GameManager.Instance.increaseComp(effect2);
-        curDialog = choice2;
         GameManager.Instance.setIndex(0);
         Speak();
     }
