@@ -293,7 +293,10 @@ public class GameManager : MonoBehaviour
 
     public void updateComp(string comp)
     {
-
+        if (comp != null)
+        {
+            resume.addExperience(comp);
+        }
     }
 
     public void resetButtons()
