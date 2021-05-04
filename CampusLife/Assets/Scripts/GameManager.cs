@@ -301,7 +301,7 @@ public class GameManager : MonoBehaviour
     {
         if (comp != null)
         {
-            resume.addExperience(comp);
+            resume.addCareerCompentance(comp);
         }
     }
 
