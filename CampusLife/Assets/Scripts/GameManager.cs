@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
     public GameObject trieschmann;
     public GameObject wac;
     public GameObject careerfair;
+    public GameObject volunteer;
 
     [Header("Images")]
     public GameObject tourguide;
@@ -329,7 +330,7 @@ public class GameManager : MonoBehaviour
         else if (s == "bearman")
         {
             bearman.SetActive(true);
-            SetName("placeholder");
+            SetName("Career Services Rep");
             //SetDialogTextColor(245, 130, 42)
         }
         else if (s == "briefcasehead")
@@ -405,6 +406,10 @@ public class GameManager : MonoBehaviour
         else if (s == "careerfair")
         {
             careerfair.SetActive(true);
+        }
+        else if (s == "volunteer")
+        {
+            volunteer.SetActive(true);
         }
         else
         {

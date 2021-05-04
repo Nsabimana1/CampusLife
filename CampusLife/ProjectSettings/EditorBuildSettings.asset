@@ -53,5 +53,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dorm.unity
     guid: e4f698102c2bc4e4ca8558295122407a
+  - enabled: 1
+    path: Assets/Scenes/volunteer.unity
+    guid: 6bee592af4278e246b340cbe3cb055d5
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 58d6a3cb28d64ed4297d7c893b5bd606, type: 2}

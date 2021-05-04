@@ -154,9 +154,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toScene: careerfair
   otherScene: careerfair
-  choice1text: Internship
+  choice1text: Volunteer
   choice2text: Employment
-  other1text: Internship
+  other1text: Volunteer
   other2text: Employment
   character: briefcasehead
   othercharacter: briefcasehead
