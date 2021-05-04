@@ -186,15 +186,15 @@ public class GameManager : MonoBehaviour
         {
             //clear text
             DialogText.text = "";
-            //start typing
-            dialogCo = StartCoroutine(TypeText(text[index]));
             //Get new text
             index++;
+            //start typing
+            dialogCo = StartCoroutine(TypeText(text[index]));
             curDialog = text[index];
             //reset bools properly
             textTyped = false;
         }
-        else //if (textTyped && !textBeTyping)
+        else if (textTyped && !textBeTyping)
         {
             dialogBox.SetActive(true);
             DialogText.text = "";
@@ -319,6 +319,8 @@ public class GameManager : MonoBehaviour
         changeBackground(toScene);
         disableChoice();
         changeCharacter(character);
+        textTyped = false;
+        textBeTyping = false;
     }
 
     public void choice2Pressed()
@@ -330,6 +332,8 @@ public class GameManager : MonoBehaviour
         changeBackground(otherScene);
         disableChoice();
         changeCharacter(othercharacter);
+        textTyped = false;
+        textBeTyping = false;
     }
 
     public void changeCharacter(string s)
