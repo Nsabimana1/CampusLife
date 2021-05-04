@@ -11,7 +11,7 @@ public class Resume : MonoBehaviour
     //headers for the resume
     private string[] ResumeHeaders = new string[] { "Skills:","Experience:"};
     //array representing the resume, might change to a list
-    List<string> theResume = new List<string>();
+    //List<string> theResume = new List<string>();
     // a huge array of all possible string. First [] is competencies, second [] is the level of competency
     private string[][] possibleString;
 
@@ -31,7 +31,7 @@ public class Resume : MonoBehaviour
         //Maybe we get different string based on the choices players make.
         for(int i = 0; i < c.Length; i++)
         {
-            theResume[i] = possibleString[i][c[i]];
+            //theResume[i] = possibleString[i][c[i]];
         }
     }
 
@@ -41,7 +41,7 @@ public class Resume : MonoBehaviour
         if (GameManager.Instance.getPlayer().getInternship() && !inString(6, possibleString[6][1]))
         {
             //update string to include stuff about internship
-            theResume[6] = theResume[6].ToString() + " ";
+            //theResume[6] = theResume[6].ToString() + " ";
         }
     }
     public void updateClub()
@@ -50,12 +50,12 @@ public class Resume : MonoBehaviour
         if (GameManager.Instance.getPlayer().getClub() && !inString(7, possibleString[7][1]))
         {
             //update string to include stuff about club
-            theResume[7] = theResume[7].ToString() + " ";
+            //theResume[7] = theResume[7].ToString() + " ";
         }
     }
     public bool inString(int index, string s)
     {
-        return theResume[index] == s;
+        return true; //theResume[index] == s;
     }
     public string getResume()
     {
@@ -93,7 +93,7 @@ public class Resume : MonoBehaviour
                     wholeResume = wholeResume + "\n";
                 }
             }
-        }
+        }*/
         return wholeResume;
     }
 
