@@ -13,13 +13,14 @@ public class Choice : MonoBehaviour
     public string other2text;
     public string character;
     public string othercharacter;
+    public string comp;
 
     // Start is called before the first frame update
     private void Start()
     {
 
         GameManager.Instance.setChoices(toScene, otherScene, choice1text, choice2text, other1text, other2text, character, othercharacter);
-
+        GameManager.Instance.updateComp(comp);
     }
 
 }
