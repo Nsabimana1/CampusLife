@@ -44,6 +44,8 @@ public class GameManager : MonoBehaviour
     public GameObject wac;
     public GameObject careerfair;
     public GameObject volunteer;
+    public GameObject hirehendrix;
+    public GameObject csmeeting;
 
     [Header("Images")]
     public GameObject tourguide;
@@ -421,6 +423,14 @@ public class GameManager : MonoBehaviour
         else if (s == "volunteer")
         {
             volunteer.SetActive(true);
+        }
+        else if (s == "hirehendrix")
+        {
+            hirehendrix.SetActive(true);
+        }
+        else if (s == "csmeeting")
+        {
+            csmeeting.SetActive(true);
         }
         else
         {
