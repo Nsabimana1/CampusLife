@@ -10,7 +10,7 @@ public class Resume : MonoBehaviour
     //headers for the resume
     private string[] ResumeHeaders = new string[] { "Skills:","Experience:"};
     //array representing the resume, might change to a list
-    private string[] theResume = new string[] { };
+    List<string> theResume = new List<string>();
     // a huge array of all possible string. First [] is competencies, second [] is the level of competency
     private string[][] possibleString;
 
