@@ -6,7 +6,7 @@ using UnityEngine;
 public class Dialogue : MonoBehaviour
 {
     public TextAsset allText;
-    public TextAsset choiceText;
+    //public TextAsset choiceText;
 
     //variables determining which choices effect what competencies.
     [Range(0, 5)]
