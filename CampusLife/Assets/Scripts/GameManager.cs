@@ -133,7 +133,9 @@ public class GameManager : MonoBehaviour
         HideResumeButton.SetActive(true);
         ShowResumeButton.SetActive(false);
         //methods for showing the resume in the UI.
-        ResumeText.text = resume.getResume();
+        //ResumeText.text = resume.getResume();
+        ResumeText.text = resume.constructResume();
+
     }
 
     public GameObject getButton1()

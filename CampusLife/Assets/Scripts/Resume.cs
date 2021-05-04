@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
 public class Resume : MonoBehaviour
@@ -13,6 +14,10 @@ public class Resume : MonoBehaviour
     List<string> theResume = new List<string>();
     // a huge array of all possible string. First [] is competencies, second [] is the level of competency
     private string[][] possibleString;
+
+
+    private List<string> skills = new List<string>();
+    private List<string> experiences = new List<string>();
 
     // Update is called once per frame
     void Update()
@@ -55,9 +60,9 @@ public class Resume : MonoBehaviour
     public string getResume()
     {
         string wholeResume = " ";
-        if (theResume.Length != 0)
+        if (theResume.Count != 0)
         {
-            for (int i = 0; i < theResume.Length; i++)
+            for (int i = 0; i < theResume.Count; i++)
             {
                 if (i == 0)
                 {
@@ -90,5 +95,35 @@ public class Resume : MonoBehaviour
             }
         }
         return wholeResume;
+    }
+
+    public void addSkill(string skill) 
+    {
+        if (!this.skills.Contains(skill))
+        {
+            this.skills.Add(skill);
+        }
+    }
+
+    public void addExperience(string experience) 
+    {
+        if (!this.skills.Contains(experience))
+        {
+            this.skills.Add(experience);
+        }
+    }
+
+    public string constructResume()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.Append("      ");
+        sb.Append("Skills:");
+        sb.Append("\n");
+        this.skills.ForEach(s => sb.Append(s + "\n"));
+        sb.Append("      ");
+        sb.Append("Experiences:");
+        sb.Append("\n");
+        this.experiences.ForEach(s => sb.Append(s + "\n"));
+        return sb.ToString();
     }
 }
