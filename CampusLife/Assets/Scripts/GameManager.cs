@@ -25,6 +25,11 @@ public class GameManager : MonoBehaviour
     public GameObject Choice2;
 
     public GameObject startButton;
+    public GameObject backButton;
+    public GameObject helpButton;
+    public GameObject helpDialogBox;
+    public GameObject creditButton;
+    public GameObject creditDialogBox;
     public GameObject titleText;
 
     [Header("Backgrounds")]
@@ -270,6 +275,9 @@ public class GameManager : MonoBehaviour
 
     {
         startButton.SetActive(false);
+        creditButton.SetActive(false);
+        helpButton.SetActive(false);
+        backButton.SetActive(false);
         titleText.SetActive(false);
         logo.enabled = false;
 
@@ -283,6 +291,28 @@ public class GameManager : MonoBehaviour
         SetChoice1Text("Take tour");
         SetChoice2Text("Skip tour");
         changeScene("sltc");
+    }
+
+    public void creditButtonPressed()
+    {
+        creditDialogBox.SetActive(true);
+        helpButton.SetActive(false);
+        backButton.SetActive(true);
+    }
+
+    public void helpButtonPressed()
+    {
+        helpDialogBox.SetActive(true);
+        backButton.SetActive(true);
+    }
+
+    public void backButtonPressed()
+    {
+        backButton.SetActive(false);
+        creditButton.SetActive(true);
+        creditDialogBox.SetActive(false);
+        helpButton.SetActive(true);
+        helpDialogBox.SetActive(false);
     }
 
     public void setChoices(string nextScene, string secondScene, string c1, string c2, string o1, string o2, string ch, string och)
