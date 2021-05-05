@@ -169,12 +169,15 @@ public class GameManager : MonoBehaviour
 
     public void StartDialog(string[] text)
     {
+        if(dialogCo != null)
+        {
+            StopDialog();
+        }
         //text will stop and just print out the dialog in this case
-        if(!textTyped && textBeTyping)
+        if (!textTyped && textBeTyping)
         {
             dialogBox.SetActive(true);
             //print out entire dialog to dialog box and stop dialog typing
-            StopDialog();
             SetDialog(text[index]);
             textTyped = true;
         }
