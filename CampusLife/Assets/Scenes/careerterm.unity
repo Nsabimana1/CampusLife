@@ -283,13 +283,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toScene: end
   otherScene: end
-  choice1text: 
-  choice2text: 
-  other1text: 
-  other2text: 
-  character: 
-  othercharacter: 
-  comp: Professionalism
+  choice1text: Play again.
+  choice2text: Play again.
+  other1text: Play again.
+  other2text: Play again.
+  character: tourguide
+  othercharacter: tourguide
+  comp: Leadership
 --- !u!4 &1452884961
 Transform:
   m_ObjectHideFlags: 0
