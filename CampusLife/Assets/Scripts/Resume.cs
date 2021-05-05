@@ -130,14 +130,14 @@ public class Resume : MonoBehaviour
         this.competances.ForEach(s => sb.Append(" - " + s + "\n"));
         sb.Append("      ");
         sb.Append("\n");
-        sb.Append("Skills:");
+        sb.Append("Experiences:");
         sb.Append("\n");
         this.skills.ForEach(s => sb.Append(" - " + s + "\n"));
         sb.Append("      ");
         sb.Append("\n");
-        sb.Append("Experiences:");
-        sb.Append("\n");
-        this.experiences.ForEach(s => sb.Append(" - " + s + "\n"));
+        //sb.Append("Experiences:");
+        //sb.Append("\n");
+        //this.experiences.ForEach(s => sb.Append(" - " + s + "\n"));
         return sb.ToString();
     }
 }
