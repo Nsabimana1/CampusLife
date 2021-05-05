@@ -59,6 +59,7 @@ public class Dialogue : MonoBehaviour
     //in the dialog array to the method StartDialog
     public void Speak()
     {
+        Debug.Log("hi" + i);
         GameManager.Instance.StartDialog(curDialog);
         i++;
     }
@@ -68,13 +69,11 @@ public class Dialogue : MonoBehaviour
         choiceMade = true;
         GameManager.Instance.increaseComp(effect1);
         GameManager.Instance.setIndex(0);
-        Speak();
     }
     public void Choice2()
     {
         choiceMade = true;
         GameManager.Instance.increaseComp(effect2);
         GameManager.Instance.setIndex(0);
-        Speak();
     }
 }

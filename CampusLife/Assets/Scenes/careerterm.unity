@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d91198e06c6b0a7408d028d1226be006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allText: {fileID: 0}
+  allText: {fileID: 4900000, guid: d739f15992b2b0a4a867a49afc7e2a95, type: 3}
   effect1: 0
   effect2: 0
 --- !u!4 &755180439
@@ -281,16 +281,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09d0218dae2a2a4493be733161fda94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: 
-  otherScene: 
-  choice1text: 
-  choice2text: 
-  other1text: 
-  other2text: 
-  character: 
-  othercharacter: 
-  comp: Career Management
-  experience: 
+  toScene: end
+  otherScene: end
+  choice1text: Play again.
+  choice2text: Play again.
+  other1text: Play again.
+  other2text: Play again.
+  character: tourguide
+  othercharacter: tourguide
+  comp: Leadership
 --- !u!4 &1452884961
 Transform:
   m_ObjectHideFlags: 0

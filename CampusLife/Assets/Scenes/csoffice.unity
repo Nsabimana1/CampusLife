@@ -153,7 +153,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allText: {fileID: 4900000, guid: 515b5a95f68fbcb4aad6262319acc207, type: 3}
-  choiceText: {fileID: 4900000, guid: e362ba571a38e4c4dac6862449afba13, type: 3}
   effect1: 0
   effect2: 1
 --- !u!4 &722651578
@@ -290,6 +289,7 @@ MonoBehaviour:
   other2text: To career fair
   character: tourguide
   othercharacter: tourguide
+  comp: 
 --- !u!4 &1632174389
 Transform:
   m_ObjectHideFlags: 0
