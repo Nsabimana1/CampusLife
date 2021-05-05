@@ -289,7 +289,8 @@ MonoBehaviour:
   other2text: Skip tour
   character: tourguide
   othercharacter: tourguide
-  comp: 'Critical Thinking/Problem Solving '
+  comp: Critical Thinking/Problem Solving
+  experience: 
 --- !u!4 &564662601
 Transform:
   m_ObjectHideFlags: 0

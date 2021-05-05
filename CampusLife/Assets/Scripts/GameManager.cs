@@ -296,9 +296,17 @@ public class GameManager : MonoBehaviour
 
     public void updateComp(string comp)
     {
-        if (comp != null)
+        if (comp != null && comp.Length > 0)
         {
-            resume.addExperience(comp);
+            resume.addCareerCompentance(comp);
+        }
+    }
+
+    public void addExperince(string experience) 
+    {
+        if (experience != null && experience.Length > 0)
+        {
+            resume.addExperience(experience);
         }
     }
 

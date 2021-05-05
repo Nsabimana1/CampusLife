@@ -14,6 +14,7 @@ public class Choice : MonoBehaviour
     public string character;
     public string othercharacter;
     public string comp;
+    public string experience;
 
     // Start is called before the first frame update
     private void Start()
@@ -21,6 +22,7 @@ public class Choice : MonoBehaviour
 
         GameManager.Instance.setChoices(toScene, otherScene, choice1text, choice2text, other1text, other2text, character, othercharacter);
         GameManager.Instance.updateComp(comp);
+        GameManager.Instance.addExperince(experience);
     }
 
 }
