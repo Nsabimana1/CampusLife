@@ -289,7 +289,8 @@ MonoBehaviour:
   other2text: 
   character: 
   othercharacter: 
-  comp: 
+  comp: Career Management
+  experience: 
 --- !u!4 &1452884961
 Transform:
   m_ObjectHideFlags: 0

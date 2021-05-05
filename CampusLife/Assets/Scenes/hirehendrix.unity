@@ -160,7 +160,8 @@ MonoBehaviour:
   other2text: 
   character: bearman
   othercharacter: bearman
-  comp: 
+  comp: Professionalism
+  experience: 
 --- !u!4 &625908149
 Transform:
   m_ObjectHideFlags: 0
