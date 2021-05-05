@@ -290,6 +290,7 @@ MonoBehaviour:
   character: bearman
   othercharacter: bearman
   comp: Communication
+  experience: Met with Career Services
 --- !u!4 &1645244320
 Transform:
   m_ObjectHideFlags: 0

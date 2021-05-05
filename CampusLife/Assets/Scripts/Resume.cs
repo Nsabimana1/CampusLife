@@ -15,7 +15,7 @@ public class Resume : MonoBehaviour
     // a huge array of all possible string. First [] is competencies, second [] is the level of competency
     private string[][] possibleString;
 
-
+    private List<string> competances = new List<string>();
     private List<string> skills = new List<string>();
     private List<string> experiences = new List<string>();
 
@@ -97,6 +97,13 @@ public class Resume : MonoBehaviour
         return wholeResume;
     }
 
+    public void addCareerCompentance(string competance)
+    {
+        if (!this.competances.Contains(competance))
+        {
+            this.competances.Add(competance);
+        }
+    }
     public void addSkill(string skill) 
     {
         if (!this.skills.Contains(skill))
@@ -117,13 +124,20 @@ public class Resume : MonoBehaviour
     {
         StringBuilder sb = new StringBuilder();
         sb.Append("      ");
+        sb.Append("\n");
         sb.Append("Career Competencies:");
         sb.Append("\n");
-        this.skills.ForEach(s => sb.Append(s + "\n"));
+        this.competances.ForEach(s => sb.Append(" - " + s + "\n"));
         sb.Append("      ");
-        sb.Append("");
         sb.Append("\n");
-        this.experiences.ForEach(s => sb.Append(s + "\n"));
+        sb.Append("Experiences:");
+        sb.Append("\n");
+        this.skills.ForEach(s => sb.Append(" - " + s + "\n"));
+        sb.Append("      ");
+        sb.Append("\n");
+        //sb.Append("Experiences:");
+        //sb.Append("\n");
+        //this.experiences.ForEach(s => sb.Append(" - " + s + "\n"));
         return sb.ToString();
     }
 }
