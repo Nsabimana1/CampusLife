@@ -281,15 +281,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09d0218dae2a2a4493be733161fda94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: 
-  otherScene: 
+  toScene: end
+  otherScene: end
   choice1text: 
   choice2text: 
   other1text: 
   other2text: 
   character: 
   othercharacter: 
-  comp: 
+  comp: Professionalism
 --- !u!4 &1452884961
 Transform:
   m_ObjectHideFlags: 0

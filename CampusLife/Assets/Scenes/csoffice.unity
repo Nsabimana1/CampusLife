@@ -289,7 +289,7 @@ MonoBehaviour:
   other2text: To career fair
   character: tourguide
   othercharacter: tourguide
-  comp: Communication
+  comp: 
 --- !u!4 &1632174389
 Transform:
   m_ObjectHideFlags: 0

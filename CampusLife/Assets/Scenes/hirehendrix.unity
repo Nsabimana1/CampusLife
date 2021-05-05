@@ -156,8 +156,8 @@ MonoBehaviour:
   otherScene: careerterm
   choice1text: Hire Hendrix
   choice2text: Career Term
-  other1text: 
-  other2text: 
+  other1text: Finish C.T.
+  other2text: Finish C.T.
   character: bearman
   othercharacter: bearman
   comp: Career Management
