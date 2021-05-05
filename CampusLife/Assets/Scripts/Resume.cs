@@ -125,7 +125,7 @@ public class Resume : MonoBehaviour
         StringBuilder sb = new StringBuilder();
         sb.Append("      ");
         sb.Append("\n");
-        sb.Append("Career Compentances:");
+        sb.Append("Career Competencies:");
         sb.Append("\n");
         this.competances.ForEach(s => sb.Append(" - " + s + "\n"));
         sb.Append("      ");
