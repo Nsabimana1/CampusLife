@@ -169,10 +169,6 @@ public class GameManager : MonoBehaviour
 
     public void StartDialog(string[] text)
     {
-        if (index >= text.Length) 
-        { 
-            index = 0; 
-        }
         //text will stop and just print out the dialog in this case
         if(!textTyped && textBeTyping)
         {
@@ -194,8 +190,9 @@ public class GameManager : MonoBehaviour
             //reset bools properly
             textTyped = false;
         }
-        else if (textTyped && !textBeTyping)
+        else //if (textTyped && !textBeTyping)
         {
+            index = 0;
             dialogBox.SetActive(true);
             DialogText.text = "";
             dialogCo = StartCoroutine(TypeText(text[index]));
