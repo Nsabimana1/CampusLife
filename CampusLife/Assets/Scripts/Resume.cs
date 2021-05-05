@@ -117,11 +117,11 @@ public class Resume : MonoBehaviour
     {
         StringBuilder sb = new StringBuilder();
         sb.Append("      ");
-        sb.Append("Skills:");
+        sb.Append("Career Competencies:");
         sb.Append("\n");
         this.skills.ForEach(s => sb.Append(s + "\n"));
         sb.Append("      ");
-        sb.Append("Experiences:");
+        sb.Append("");
         sb.Append("\n");
         this.experiences.ForEach(s => sb.Append(s + "\n"));
         return sb.ToString();
