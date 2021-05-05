@@ -221,7 +221,7 @@ MonoBehaviour:
   character: briefcasehead
   othercharacter: bearman
   comp: Professionalism
-  experience: 
+  experience: Talked to Employer
 --- !u!1 &2050359806
 GameObject:
   m_ObjectHideFlags: 0

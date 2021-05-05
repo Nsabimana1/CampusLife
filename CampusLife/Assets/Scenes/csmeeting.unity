@@ -289,8 +289,8 @@ MonoBehaviour:
   other2text: Finish C.T.
   character: bearman
   othercharacter: bearman
-  comp: Career Management
-  experience: 
+  comp: Communication
+  experience: Met with Career Services
 --- !u!4 &1645244320
 Transform:
   m_ObjectHideFlags: 0

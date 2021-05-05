@@ -160,8 +160,8 @@ MonoBehaviour:
   other2text: Finish C.T.
   character: bearman
   othercharacter: bearman
-  comp: Professionalism
-  experience: 
+  comp: 'Career Management '
+  experience: Job Searching
 --- !u!4 &625908149
 Transform:
   m_ObjectHideFlags: 0

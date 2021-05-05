@@ -290,6 +290,7 @@ MonoBehaviour:
   character: tourguide
   othercharacter: tourguide
   comp: Leadership
+  experience: Community Service Projects
 --- !u!4 &1452884961
 Transform:
   m_ObjectHideFlags: 0
