@@ -220,7 +220,7 @@ MonoBehaviour:
   other2text: Career Term
   character: briefcasehead
   othercharacter: bearman
-  comp: 
+  comp: Professionalism
 --- !u!1 &2050359806
 GameObject:
   m_ObjectHideFlags: 0

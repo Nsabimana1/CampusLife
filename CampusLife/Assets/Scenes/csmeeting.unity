@@ -289,7 +289,7 @@ MonoBehaviour:
   other2text: 
   character: bearman
   othercharacter: bearman
-  comp: 
+  comp: Career Management
 --- !u!4 &1645244320
 Transform:
   m_ObjectHideFlags: 0
